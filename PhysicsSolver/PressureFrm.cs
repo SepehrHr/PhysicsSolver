@@ -1,14 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-namespace PhysicsSolver
+﻿namespace PhysicsSolver
 {
     public partial class PressureFrm : Form
     {
@@ -32,6 +22,11 @@ namespace PhysicsSolver
                 lblAreaResult.Text = $"{numArea.Value} square meters";
                 lblResultSolid.Text = result;
             }
+        }
+
+        private void PressureFrm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

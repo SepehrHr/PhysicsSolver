@@ -244,6 +244,7 @@
             Name = "PressureFrm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "PressureFrm";
+            Load += PressureFrm_Load;
             tabControl1.ResumeLayout(false);
             tabSolid.ResumeLayout(false);
             tableLayoutPanel1.ResumeLayout(false);
