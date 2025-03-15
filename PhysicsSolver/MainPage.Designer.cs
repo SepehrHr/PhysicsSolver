@@ -52,7 +52,7 @@
             tableLayoutPanel1.SetColumnSpan(btnPresure, 2);
             btnPresure.Location = new Point(3, 3);
             btnPresure.Name = "btnPresure";
-            btnPresure.Size = new Size(476, 62);
+            btnPresure.Size = new Size(476, 131);
             btnPresure.TabIndex = 1;
             btnPresure.Text = "Presure";
             btnPresure.UseVisualStyleBackColor = true;
@@ -70,7 +70,6 @@
             tableLayoutPanel1.RowCount = 2;
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
             tableLayoutPanel1.Size = new Size(482, 275);
             tableLayoutPanel1.TabIndex = 2;
             // 
