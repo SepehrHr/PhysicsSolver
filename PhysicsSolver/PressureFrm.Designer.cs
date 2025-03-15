@@ -53,17 +53,28 @@
             pictureBox1 = new PictureBox();
             tabFluid = new TabPage();
             tableLayoutPanel2 = new TableLayoutPanel();
-            numericUpDown1 = new NumericUpDown();
-            numericUpDown2 = new NumericUpDown();
+            cmbPressureUnitFliud = new ComboBox();
+            numPressureFliud = new NumericUpDown();
+            cmbRhoUnit = new ComboBox();
+            numHeight = new NumericUpDown();
+            numG = new NumericUpDown();
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
-            button1 = new Button();
-            label7 = new Label();
-            label8 = new Label();
-            label9 = new Label();
-            numericUpDown3 = new NumericUpDown();
-            label10 = new Label();
+            btnCalculateFliuds = new Button();
+            lblRho = new Label();
+            lblG = new Label();
+            lblHeight = new Label();
+            numRho = new NumericUpDown();
+            cmbGUnit = new ComboBox();
+            cmbHeightUnit = new ComboBox();
+            lblResultFliuds = new Label();
+            flowLayoutPanel2 = new FlowLayoutPanel();
+            rd1Fliud = new RadioButton();
+            rd2Fliud = new RadioButton();
+            rd3Fliud = new RadioButton();
+            label11 = new Label();
+            lblPressureFliuds = new Label();
             pictureBox2 = new PictureBox();
             tabControl1.SuspendLayout();
             tabSolid.SuspendLayout();
@@ -75,9 +86,11 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             tabFluid.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)numPressureFliud).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)numHeight).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)numG).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)numRho).BeginInit();
+            flowLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
@@ -107,12 +120,11 @@
             // tableLayoutPanel1
             // 
             tableLayoutPanel1.ColumnCount = 5;
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 19.5121956F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 19.5122F));
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 16.5853653F));
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 7.804878F));
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 19.5121956F));
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 36.5853653F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
             tableLayoutPanel1.Controls.Add(cmbForceUnit, 2, 0);
             tableLayoutPanel1.Controls.Add(numPressureSolid, 1, 2);
             tableLayoutPanel1.Controls.Add(numArea, 1, 1);
@@ -344,54 +356,93 @@
             // 
             // tableLayoutPanel2
             // 
-            tableLayoutPanel2.ColumnCount = 4;
-            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
-            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
-            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
-            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 35F));
-            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
-            tableLayoutPanel2.Controls.Add(numericUpDown1, 1, 2);
-            tableLayoutPanel2.Controls.Add(numericUpDown2, 1, 1);
+            tableLayoutPanel2.ColumnCount = 5;
+            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 19.0930824F));
+            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 16.2291164F));
+            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 9.785203F));
+            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 19.09308F));
+            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 35.7995224F));
+            tableLayoutPanel2.Controls.Add(cmbPressureUnitFliud, 2, 3);
+            tableLayoutPanel2.Controls.Add(numPressureFliud, 1, 3);
+            tableLayoutPanel2.Controls.Add(cmbRhoUnit, 2, 0);
+            tableLayoutPanel2.Controls.Add(numHeight, 1, 2);
+            tableLayoutPanel2.Controls.Add(numG, 1, 1);
             tableLayoutPanel2.Controls.Add(label4, 0, 0);
             tableLayoutPanel2.Controls.Add(label5, 0, 1);
             tableLayoutPanel2.Controls.Add(label6, 0, 2);
-            tableLayoutPanel2.Controls.Add(button1, 0, 3);
-            tableLayoutPanel2.Controls.Add(label7, 2, 0);
-            tableLayoutPanel2.Controls.Add(label8, 2, 1);
-            tableLayoutPanel2.Controls.Add(label9, 2, 2);
-            tableLayoutPanel2.Controls.Add(numericUpDown3, 1, 0);
-            tableLayoutPanel2.Controls.Add(label10, 3, 0);
+            tableLayoutPanel2.Controls.Add(btnCalculateFliuds, 0, 4);
+            tableLayoutPanel2.Controls.Add(lblRho, 3, 0);
+            tableLayoutPanel2.Controls.Add(lblG, 3, 1);
+            tableLayoutPanel2.Controls.Add(lblHeight, 3, 2);
+            tableLayoutPanel2.Controls.Add(numRho, 1, 0);
+            tableLayoutPanel2.Controls.Add(cmbGUnit, 2, 1);
+            tableLayoutPanel2.Controls.Add(cmbHeightUnit, 2, 2);
+            tableLayoutPanel2.Controls.Add(lblResultFliuds, 4, 1);
+            tableLayoutPanel2.Controls.Add(flowLayoutPanel2, 4, 0);
+            tableLayoutPanel2.Controls.Add(label11, 0, 3);
+            tableLayoutPanel2.Controls.Add(lblPressureFliuds, 3, 3);
             tableLayoutPanel2.Dock = DockStyle.Fill;
-            tableLayoutPanel2.Location = new Point(3, 125);
+            tableLayoutPanel2.Location = new Point(3, 97);
             tableLayoutPanel2.Name = "tableLayoutPanel2";
-            tableLayoutPanel2.RowCount = 4;
-            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
-            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
-            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
-            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
-            tableLayoutPanel2.Size = new Size(786, 136);
+            tableLayoutPanel2.RowCount = 5;
+            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
+            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
+            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
+            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
+            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
+            tableLayoutPanel2.Size = new Size(786, 164);
             tableLayoutPanel2.TabIndex = 3;
             // 
-            // numericUpDown1
+            // cmbPressureUnitFliud
             // 
-            numericUpDown1.Dock = DockStyle.Fill;
-            numericUpDown1.Location = new Point(160, 71);
-            numericUpDown1.Maximum = new decimal(new int[] { 99999, 0, 0, 0 });
-            numericUpDown1.Name = "numericUpDown1";
-            numericUpDown1.Size = new Size(190, 27);
-            numericUpDown1.TabIndex = 6;
-            numericUpDown1.ThousandsSeparator = true;
+            cmbPressureUnitFliud.Dock = DockStyle.Fill;
+            cmbPressureUnitFliud.FormattingEnabled = true;
+            cmbPressureUnitFliud.Items.AddRange(new object[] { "Pa", "atm" });
+            cmbPressureUnitFliud.Location = new Point(280, 99);
+            cmbPressureUnitFliud.Name = "cmbPressureUnitFliud";
+            cmbPressureUnitFliud.Size = new Size(70, 28);
+            cmbPressureUnitFliud.TabIndex = 10;
             // 
-            // numericUpDown2
+            // numPressureFliud
             // 
-            numericUpDown2.Dock = DockStyle.Fill;
-            numericUpDown2.Location = new Point(160, 37);
-            numericUpDown2.Maximum = new decimal(new int[] { 99999, 0, 0, 0 });
-            numericUpDown2.Name = "numericUpDown2";
-            numericUpDown2.Size = new Size(190, 27);
-            numericUpDown2.TabIndex = 5;
-            numericUpDown2.ThousandsSeparator = true;
-            numericUpDown2.Value = new decimal(new int[] { 10, 0, 0, 0 });
+            numPressureFliud.Dock = DockStyle.Fill;
+            numPressureFliud.Location = new Point(153, 99);
+            numPressureFliud.Maximum = new decimal(new int[] { 99999, 0, 0, 0 });
+            numPressureFliud.Name = "numPressureFliud";
+            numPressureFliud.Size = new Size(121, 27);
+            numPressureFliud.TabIndex = 9;
+            numPressureFliud.ThousandsSeparator = true;
+            // 
+            // cmbRhoUnit
+            // 
+            cmbRhoUnit.Dock = DockStyle.Fill;
+            cmbRhoUnit.FormattingEnabled = true;
+            cmbRhoUnit.Items.AddRange(new object[] { "Kg/m³", "g/cm³" });
+            cmbRhoUnit.Location = new Point(280, 3);
+            cmbRhoUnit.Name = "cmbRhoUnit";
+            cmbRhoUnit.Size = new Size(70, 28);
+            cmbRhoUnit.TabIndex = 2;
+            // 
+            // numHeight
+            // 
+            numHeight.Dock = DockStyle.Fill;
+            numHeight.Location = new Point(153, 67);
+            numHeight.Maximum = new decimal(new int[] { 99999, 0, 0, 0 });
+            numHeight.Name = "numHeight";
+            numHeight.Size = new Size(121, 27);
+            numHeight.TabIndex = 6;
+            numHeight.ThousandsSeparator = true;
+            // 
+            // numG
+            // 
+            numG.Dock = DockStyle.Fill;
+            numG.Location = new Point(153, 35);
+            numG.Maximum = new decimal(new int[] { 99999, 0, 0, 0 });
+            numG.Name = "numG";
+            numG.Size = new Size(121, 27);
+            numG.TabIndex = 5;
+            numG.ThousandsSeparator = true;
+            numG.Value = new decimal(new int[] { 98, 0, 0, 65536 });
             // 
             // label4
             // 
@@ -405,79 +456,159 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(3, 34);
+            label5.Location = new Point(3, 32);
             label5.Name = "label5";
-            label5.Size = new Size(105, 20);
+            label5.Size = new Size(81, 20);
             label5.TabIndex = 0;
-            label5.Text = "Gravity (m/s2):";
+            label5.Text = "g (Gravity):";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label6.Location = new Point(3, 68);
+            label6.Location = new Point(3, 64);
             label6.Name = "label6";
-            label6.Size = new Size(81, 20);
+            label6.Size = new Size(79, 20);
             label6.TabIndex = 0;
-            label6.Text = "height (m):";
+            label6.Text = "h (Height):";
             // 
-            // button1
+            // btnCalculateFliuds
             // 
-            tableLayoutPanel2.SetColumnSpan(button1, 4);
-            button1.Dock = DockStyle.Fill;
-            button1.Location = new Point(70, 105);
-            button1.Margin = new Padding(70, 3, 70, 3);
-            button1.Name = "button1";
-            button1.Size = new Size(646, 28);
-            button1.TabIndex = 2;
-            button1.Text = "Calculate";
-            button1.UseVisualStyleBackColor = true;
+            tableLayoutPanel2.SetColumnSpan(btnCalculateFliuds, 5);
+            btnCalculateFliuds.Dock = DockStyle.Fill;
+            btnCalculateFliuds.Location = new Point(80, 131);
+            btnCalculateFliuds.Margin = new Padding(80, 3, 80, 3);
+            btnCalculateFliuds.Name = "btnCalculateFliuds";
+            btnCalculateFliuds.Size = new Size(626, 30);
+            btnCalculateFliuds.TabIndex = 2;
+            btnCalculateFliuds.Text = "Calculate";
+            btnCalculateFliuds.UseVisualStyleBackColor = true;
+            btnCalculateFliuds.Click += btnCalculateFliuds_Click;
             // 
-            // label7
+            // lblRho
             // 
-            label7.AutoSize = true;
-            label7.Location = new Point(356, 0);
-            label7.Name = "label7";
-            label7.Size = new Size(0, 20);
-            label7.TabIndex = 3;
+            lblRho.AutoSize = true;
+            lblRho.Location = new Point(356, 0);
+            lblRho.Name = "lblRho";
+            lblRho.Size = new Size(0, 20);
+            lblRho.TabIndex = 3;
             // 
-            // label8
+            // lblG
             // 
-            label8.AutoSize = true;
-            label8.Location = new Point(356, 34);
-            label8.Name = "label8";
-            label8.Size = new Size(0, 20);
-            label8.TabIndex = 3;
+            lblG.AutoSize = true;
+            lblG.Location = new Point(356, 32);
+            lblG.Name = "lblG";
+            lblG.Size = new Size(0, 20);
+            lblG.TabIndex = 3;
             // 
-            // label9
+            // lblHeight
             // 
-            label9.AutoSize = true;
-            label9.Location = new Point(356, 68);
-            label9.Name = "label9";
-            label9.Size = new Size(0, 20);
-            label9.TabIndex = 3;
+            lblHeight.AutoSize = true;
+            lblHeight.Location = new Point(356, 64);
+            lblHeight.Name = "lblHeight";
+            lblHeight.Size = new Size(0, 20);
+            lblHeight.TabIndex = 3;
             // 
-            // numericUpDown3
+            // numRho
             // 
-            numericUpDown3.Dock = DockStyle.Fill;
-            numericUpDown3.Location = new Point(160, 3);
-            numericUpDown3.Maximum = new decimal(new int[] { 99999, 0, 0, 0 });
-            numericUpDown3.Name = "numericUpDown3";
-            numericUpDown3.Size = new Size(190, 27);
-            numericUpDown3.TabIndex = 4;
-            numericUpDown3.ThousandsSeparator = true;
+            numRho.Dock = DockStyle.Left;
+            numRho.Location = new Point(153, 3);
+            numRho.Maximum = new decimal(new int[] { 99999, 0, 0, 0 });
+            numRho.Name = "numRho";
+            numRho.Size = new Size(121, 27);
+            numRho.TabIndex = 4;
+            numRho.ThousandsSeparator = true;
             // 
-            // label10
+            // cmbGUnit
             // 
-            label10.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            label10.AutoSize = true;
-            label10.Font = new Font("Segoe UI", 22.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label10.Location = new Point(513, 0);
-            label10.Name = "label10";
-            tableLayoutPanel2.SetRowSpan(label10, 3);
-            label10.Size = new Size(270, 102);
-            label10.TabIndex = 7;
-            label10.TextAlign = ContentAlignment.MiddleCenter;
+            cmbGUnit.Dock = DockStyle.Fill;
+            cmbGUnit.Enabled = false;
+            cmbGUnit.FormattingEnabled = true;
+            cmbGUnit.Items.AddRange(new object[] { "m/s²" });
+            cmbGUnit.Location = new Point(280, 35);
+            cmbGUnit.Name = "cmbGUnit";
+            cmbGUnit.Size = new Size(70, 28);
+            cmbGUnit.TabIndex = 2;
+            // 
+            // cmbHeightUnit
+            // 
+            cmbHeightUnit.Dock = DockStyle.Fill;
+            cmbHeightUnit.FormattingEnabled = true;
+            cmbHeightUnit.Items.AddRange(new object[] { "m", "cm" });
+            cmbHeightUnit.Location = new Point(280, 67);
+            cmbHeightUnit.Name = "cmbHeightUnit";
+            cmbHeightUnit.Size = new Size(70, 28);
+            cmbHeightUnit.TabIndex = 2;
+            // 
+            // lblResultFliuds
+            // 
+            lblResultFliuds.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            lblResultFliuds.AutoSize = true;
+            lblResultFliuds.Font = new Font("Segoe UI", 22.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblResultFliuds.Location = new Point(506, 32);
+            lblResultFliuds.Name = "lblResultFliuds";
+            tableLayoutPanel2.SetRowSpan(lblResultFliuds, 3);
+            lblResultFliuds.Size = new Size(277, 96);
+            lblResultFliuds.TabIndex = 7;
+            lblResultFliuds.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // flowLayoutPanel2
+            // 
+            flowLayoutPanel2.Controls.Add(rd1Fliud);
+            flowLayoutPanel2.Controls.Add(rd2Fliud);
+            flowLayoutPanel2.Controls.Add(rd3Fliud);
+            flowLayoutPanel2.Location = new Point(506, 3);
+            flowLayoutPanel2.Name = "flowLayoutPanel2";
+            flowLayoutPanel2.Size = new Size(277, 26);
+            flowLayoutPanel2.TabIndex = 8;
+            // 
+            // rd1Fliud
+            // 
+            rd1Fliud.AutoSize = true;
+            rd1Fliud.Checked = true;
+            rd1Fliud.Location = new Point(3, 3);
+            rd1Fliud.Name = "rd1Fliud";
+            rd1Fliud.Size = new Size(79, 24);
+            rd1Fliud.TabIndex = 0;
+            rd1Fliud.TabStop = true;
+            rd1Fliud.Text = "SI Units";
+            rd1Fliud.UseVisualStyleBackColor = true;
+            // 
+            // rd2Fliud
+            // 
+            rd2Fliud.AutoSize = true;
+            rd2Fliud.Location = new Point(88, 3);
+            rd2Fliud.Name = "rd2Fliud";
+            rd2Fliud.Size = new Size(56, 24);
+            rd2Fliud.TabIndex = 0;
+            rd2Fliud.Text = "atm";
+            rd2Fliud.UseVisualStyleBackColor = true;
+            // 
+            // rd3Fliud
+            // 
+            rd3Fliud.AutoSize = true;
+            rd3Fliud.Location = new Point(150, 3);
+            rd3Fliud.Name = "rd3Fliud";
+            rd3Fliud.Size = new Size(70, 24);
+            rd3Fliud.TabIndex = 0;
+            rd3Fliud.Text = "cmHg";
+            rd3Fliud.UseVisualStyleBackColor = true;
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Location = new Point(3, 96);
+            label11.Name = "label11";
+            label11.Size = new Size(66, 20);
+            label11.TabIndex = 0;
+            label11.Text = "Pressure:";
+            // 
+            // lblPressureFliuds
+            // 
+            lblPressureFliuds.AutoSize = true;
+            lblPressureFliuds.Location = new Point(356, 96);
+            lblPressureFliuds.Name = "lblPressureFliuds";
+            lblPressureFliuds.Size = new Size(0, 20);
+            lblPressureFliuds.TabIndex = 11;
             // 
             // pictureBox2
             // 
@@ -486,7 +617,7 @@
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
             pictureBox2.Location = new Point(3, 3);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(786, 122);
+            pictureBox2.Size = new Size(786, 94);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 2;
             pictureBox2.TabStop = false;
@@ -514,9 +645,12 @@
             tabFluid.ResumeLayout(false);
             tableLayoutPanel2.ResumeLayout(false);
             tableLayoutPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)numPressureFliud).EndInit();
+            ((System.ComponentModel.ISupportInitialize)numHeight).EndInit();
+            ((System.ComponentModel.ISupportInitialize)numG).EndInit();
+            ((System.ComponentModel.ISupportInitialize)numRho).EndInit();
+            flowLayoutPanel2.ResumeLayout(false);
+            flowLayoutPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
         }
@@ -525,7 +659,6 @@
 
         private TabControl tabControl1;
         private TabPage tabSolid;
-        private TabPage tabFluid;
         private PictureBox pictureBox1;
         private TableLayoutPanel tableLayoutPanel1;
         private Label label1;
@@ -539,19 +672,6 @@
         private NumericUpDown numPressureSolid;
         private NumericUpDown numArea;
         private Label lblResultSolid;
-        private TableLayoutPanel tableLayoutPanel2;
-        private NumericUpDown numericUpDown1;
-        private NumericUpDown numericUpDown2;
-        private Label label4;
-        private Label label5;
-        private Label label6;
-        private Button button1;
-        private Label label7;
-        private Label label8;
-        private Label label9;
-        private NumericUpDown numericUpDown3;
-        private Label label10;
-        private PictureBox pictureBox2;
         private ComboBox cmbForceUnit;
         private ComboBox cmbAreaUnit;
         private ComboBox cmbPressureUnitSolid;
@@ -559,5 +679,30 @@
         private RadioButton rd1Solid;
         private RadioButton rd2Solid;
         private RadioButton rd3Solid;
+        private TabPage tabFluid;
+        private TableLayoutPanel tableLayoutPanel2;
+        private ComboBox cmbRhoUnit;
+        private NumericUpDown numHeight;
+        private NumericUpDown numG;
+        private Label label4;
+        private Label label5;
+        private Label label6;
+        private Button btnCalculateFliuds;
+        private Label lblRho;
+        private Label lblG;
+        private Label lblHeight;
+        private NumericUpDown numRho;
+        private ComboBox cmbGUnit;
+        private ComboBox cmbHeightUnit;
+        private Label lblResultFliuds;
+        private FlowLayoutPanel flowLayoutPanel2;
+        private RadioButton rd1Fliud;
+        private RadioButton rd2Fliud;
+        private PictureBox pictureBox2;
+        private Label label11;
+        private ComboBox cmbPressureUnitFliud;
+        private NumericUpDown numPressureFliud;
+        private Label lblPressureFliuds;
+        private RadioButton rd3Fliud;
     }
 }

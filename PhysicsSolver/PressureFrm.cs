@@ -1,4 +1,6 @@
-﻿namespace PhysicsSolver
+﻿using System.Windows.Forms;
+
+namespace PhysicsSolver
 {
     public partial class PressureFrm : Form
     {
@@ -9,7 +11,7 @@
 
         private void CalculateSolids_Click(object sender, EventArgs e)
         {
-            decimal pressure = cmbPressureUnitSolid.SelectedIndex == 0 ? numPressureSolid.Value : numPressureSolid.Value * 100000;
+            decimal pressure = cmbPressureUnitSolid.SelectedIndex == 0 ? numPressureSolid.Value : numPressureSolid.Value * 101300;
             decimal area = cmbAreaUnit.SelectedIndex == 0 ? numArea.Value : numArea.Value / 10000;
             decimal force = numForce.Value;
             if (pressure == 0)
@@ -76,6 +78,105 @@
             cmbForceUnit.SelectedIndex = 0;
             cmbAreaUnit.SelectedIndex = 0;
             cmbPressureUnitSolid.SelectedIndex = 0;
+            cmbRhoUnit.SelectedIndex = 0;
+            cmbGUnit.SelectedIndex = 0;
+            cmbHeightUnit.SelectedIndex = 0;
+            cmbPressureUnitFliud.SelectedIndex = 0;
+        }
+
+        private void btnCalculateFliuds_Click(object sender, EventArgs e)
+        {
+            decimal rho = cmbRhoUnit.SelectedIndex == 0 ? numRho.Value : numRho.Value * 1000;
+            decimal g = numG.Value;
+            decimal height = cmbHeightUnit.SelectedIndex == 0 ? numHeight.Value : numHeight.Value / 100;
+            decimal pressure = cmbPressureUnitFliud.SelectedIndex == 0 ? numPressureFliud.Value : numPressureFliud.Value * 101300;
+
+            if (pressure == 0)
+            {
+                rd1Fliud.Visible = true; rd1Fliud.Text = "SI Unit";
+                rd2Fliud.Visible = true; rd2Fliud.Text = "atm";
+                rd3Fliud.Visible = true; rd3Fliud.Text = "cmHg";
+
+                var result = rho * g * height;
+                string resultStr;
+
+                if (rd2Fliud.Checked) resultStr = String.Format("{0:0.00}", result / 101300) + "atm";
+                else if (rd3Fliud.Checked) resultStr = String.Format("{0:0.00}", result / 133) + "cmHg";
+                else resultStr = String.Format("{0:0.00}", result) + "Pa";
+
+                lblRho.Text = rho + "Kg/m³";
+                lblG.Text = g + "m/s²";
+                lblHeight.Text = height + "m";
+                lblPressureFliuds.Text = result + "Pa";
+
+                lblResultFliuds.Text = resultStr;
+            }
+            else if (rho == 0)
+            {
+                if (pressure == 0)
+                {
+                    MessageBox.Show("Pressure cannot be 0.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                rd1Fliud.Visible = true; rd1Fliud.Text = "Kg/m³";
+                rd2Fliud.Visible = true; rd2Fliud.Text = "g/cm²";
+                rd3Fliud.Visible = false;
+
+                var result = g * height / pressure;
+                string resultStr;
+
+                if (rd2Fliud.Checked) resultStr = String.Format("{0:0.00}", result / 1000) + "g/cm²";
+                else resultStr = String.Format("{0:0.00}", result) + "Kg/m³";
+
+                lblRho.Text = result + "Kg/m³";
+                lblG.Text = g + "m/s²";
+                lblHeight.Text = height + "m";
+                lblPressureFliuds.Text = pressure + "Pa";
+                lblResultFliuds.Text = resultStr;
+            }
+            else if (g == 0)
+            {
+                if (pressure == 0)
+                {
+                    MessageBox.Show("Pressure cannot be 0.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                rd1Fliud.Visible = false;
+                rd2Fliud.Visible = false;
+                rd3Fliud.Visible = false;
+
+                var result = rho * height / pressure;
+                string resultStr = String.Format("{0:0.00}", result) + "m/s²";
+
+                lblRho.Text = result + "Kg/m³";
+                lblG.Text = resultStr;
+                lblHeight.Text = height + "m";
+                lblPressureFliuds.Text = pressure + "Pa";
+                lblResultFliuds.Text = resultStr;
+            }
+            else if (height == 0)
+            {
+                if (pressure == 0)
+                {
+                    MessageBox.Show("Pressure cannot be 0.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                rd1Fliud.Visible = true; rd1Fliud.Text = "m";
+                rd2Fliud.Visible = true; rd2Fliud.Text = "cm";
+                rd3Fliud.Visible = false;
+
+                var result = rho * g / pressure;
+                string resultStr;
+
+                if (rd2Fliud.Checked) resultStr = String.Format("{0:0.00}", result * 100) + "cm";
+                else resultStr = String.Format("{0:0.00}", result) + "m";
+
+                lblRho.Text = result + "Kg/m³";
+                lblG.Text = g + "m/s²";
+                lblHeight.Text = result + "m";
+                lblPressureFliuds.Text = pressure + "Pa";
+                lblResultFliuds.Text = resultStr;
+            }
         }
     }
 }
