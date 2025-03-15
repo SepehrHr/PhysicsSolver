@@ -32,6 +32,7 @@
             tabControl1 = new TabControl();
             tabSolid = new TabPage();
             tableLayoutPanel1 = new TableLayoutPanel();
+            cmbForceUnit = new ComboBox();
             numPressureSolid = new NumericUpDown();
             numArea = new NumericUpDown();
             label2 = new Label();
@@ -42,7 +43,13 @@
             lblAreaResult = new Label();
             lblPressureSolidResult = new Label();
             numForce = new NumericUpDown();
+            cmbAreaUnit = new ComboBox();
+            cmbPressureUnitSolid = new ComboBox();
             lblResultSolid = new Label();
+            flowLayoutPanel1 = new FlowLayoutPanel();
+            rd1Solid = new RadioButton();
+            rd2Solid = new RadioButton();
+            rd3Solid = new RadioButton();
             pictureBox1 = new PictureBox();
             tabFluid = new TabPage();
             tableLayoutPanel2 = new TableLayoutPanel();
@@ -64,6 +71,7 @@
             ((System.ComponentModel.ISupportInitialize)numPressureSolid).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numArea).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numForce).BeginInit();
+            flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             tabFluid.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
@@ -98,23 +106,28 @@
             // 
             // tableLayoutPanel1
             // 
-            tableLayoutPanel1.ColumnCount = 4;
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 35F));
+            tableLayoutPanel1.ColumnCount = 5;
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 19.5121956F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 16.5853653F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 7.804878F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 19.5121956F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 36.5853653F));
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel1.Controls.Add(cmbForceUnit, 2, 0);
             tableLayoutPanel1.Controls.Add(numPressureSolid, 1, 2);
             tableLayoutPanel1.Controls.Add(numArea, 1, 1);
             tableLayoutPanel1.Controls.Add(label2, 0, 0);
             tableLayoutPanel1.Controls.Add(label1, 0, 1);
             tableLayoutPanel1.Controls.Add(label3, 0, 2);
             tableLayoutPanel1.Controls.Add(CalculateSolids, 0, 3);
-            tableLayoutPanel1.Controls.Add(lblForceResult, 2, 0);
-            tableLayoutPanel1.Controls.Add(lblAreaResult, 2, 1);
-            tableLayoutPanel1.Controls.Add(lblPressureSolidResult, 2, 2);
+            tableLayoutPanel1.Controls.Add(lblForceResult, 3, 0);
+            tableLayoutPanel1.Controls.Add(lblAreaResult, 3, 1);
+            tableLayoutPanel1.Controls.Add(lblPressureSolidResult, 3, 2);
             tableLayoutPanel1.Controls.Add(numForce, 1, 0);
-            tableLayoutPanel1.Controls.Add(lblResultSolid, 3, 0);
+            tableLayoutPanel1.Controls.Add(cmbAreaUnit, 2, 1);
+            tableLayoutPanel1.Controls.Add(cmbPressureUnitSolid, 2, 2);
+            tableLayoutPanel1.Controls.Add(lblResultSolid, 4, 1);
+            tableLayoutPanel1.Controls.Add(flowLayoutPanel1, 4, 0);
             tableLayoutPanel1.Dock = DockStyle.Fill;
             tableLayoutPanel1.Location = new Point(3, 125);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -126,23 +139,34 @@
             tableLayoutPanel1.Size = new Size(786, 136);
             tableLayoutPanel1.TabIndex = 1;
             // 
+            // cmbForceUnit
+            // 
+            cmbForceUnit.Dock = DockStyle.Fill;
+            cmbForceUnit.Enabled = false;
+            cmbForceUnit.FormattingEnabled = true;
+            cmbForceUnit.Items.AddRange(new object[] { "N" });
+            cmbForceUnit.Location = new Point(286, 3);
+            cmbForceUnit.Name = "cmbForceUnit";
+            cmbForceUnit.Size = new Size(55, 28);
+            cmbForceUnit.TabIndex = 2;
+            // 
             // numPressureSolid
             // 
             numPressureSolid.Dock = DockStyle.Fill;
-            numPressureSolid.Location = new Point(160, 71);
+            numPressureSolid.Location = new Point(156, 71);
             numPressureSolid.Maximum = new decimal(new int[] { 99999, 0, 0, 0 });
             numPressureSolid.Name = "numPressureSolid";
-            numPressureSolid.Size = new Size(190, 27);
+            numPressureSolid.Size = new Size(124, 27);
             numPressureSolid.TabIndex = 6;
             numPressureSolid.ThousandsSeparator = true;
             // 
             // numArea
             // 
             numArea.Dock = DockStyle.Fill;
-            numArea.Location = new Point(160, 37);
+            numArea.Location = new Point(156, 37);
             numArea.Maximum = new decimal(new int[] { 99999, 0, 0, 0 });
             numArea.Name = "numArea";
-            numArea.Size = new Size(190, 27);
+            numArea.Size = new Size(124, 27);
             numArea.TabIndex = 5;
             numArea.ThousandsSeparator = true;
             // 
@@ -151,36 +175,36 @@
             label2.AutoSize = true;
             label2.Location = new Point(3, 0);
             label2.Name = "label2";
-            label2.Size = new Size(73, 20);
+            label2.Size = new Size(48, 20);
             label2.TabIndex = 0;
-            label2.Text = "Force (N):";
+            label2.Text = "Force:";
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Location = new Point(3, 34);
             label1.Name = "label1";
-            label1.Size = new Size(99, 34);
+            label1.Size = new Size(43, 20);
             label1.TabIndex = 0;
-            label1.Text = "Area (Square meters):";
+            label1.Text = "Area:";
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Location = new Point(3, 68);
             label3.Name = "label3";
-            label3.Size = new Size(95, 20);
+            label3.Size = new Size(66, 20);
             label3.TabIndex = 0;
-            label3.Text = "Pressure (Pa):";
+            label3.Text = "Pressure:";
             // 
             // CalculateSolids
             // 
-            tableLayoutPanel1.SetColumnSpan(CalculateSolids, 4);
+            tableLayoutPanel1.SetColumnSpan(CalculateSolids, 5);
             CalculateSolids.Dock = DockStyle.Fill;
-            CalculateSolids.Location = new Point(70, 105);
-            CalculateSolids.Margin = new Padding(70, 3, 70, 3);
+            CalculateSolids.Location = new Point(80, 105);
+            CalculateSolids.Margin = new Padding(80, 3, 80, 3);
             CalculateSolids.Name = "CalculateSolids";
-            CalculateSolids.Size = new Size(646, 28);
+            CalculateSolids.Size = new Size(626, 28);
             CalculateSolids.TabIndex = 2;
             CalculateSolids.Text = "Calculate";
             CalculateSolids.UseVisualStyleBackColor = true;
@@ -189,7 +213,7 @@
             // lblForceResult
             // 
             lblForceResult.AutoSize = true;
-            lblForceResult.Location = new Point(356, 0);
+            lblForceResult.Location = new Point(347, 0);
             lblForceResult.Name = "lblForceResult";
             lblForceResult.Size = new Size(0, 20);
             lblForceResult.TabIndex = 3;
@@ -197,7 +221,7 @@
             // lblAreaResult
             // 
             lblAreaResult.AutoSize = true;
-            lblAreaResult.Location = new Point(356, 34);
+            lblAreaResult.Location = new Point(347, 34);
             lblAreaResult.Name = "lblAreaResult";
             lblAreaResult.Size = new Size(0, 20);
             lblAreaResult.TabIndex = 3;
@@ -205,32 +229,94 @@
             // lblPressureSolidResult
             // 
             lblPressureSolidResult.AutoSize = true;
-            lblPressureSolidResult.Location = new Point(356, 68);
+            lblPressureSolidResult.Location = new Point(347, 68);
             lblPressureSolidResult.Name = "lblPressureSolidResult";
             lblPressureSolidResult.Size = new Size(0, 20);
             lblPressureSolidResult.TabIndex = 3;
             // 
             // numForce
             // 
-            numForce.Dock = DockStyle.Fill;
-            numForce.Location = new Point(160, 3);
+            numForce.Dock = DockStyle.Left;
+            numForce.Location = new Point(156, 3);
             numForce.Maximum = new decimal(new int[] { 99999, 0, 0, 0 });
             numForce.Name = "numForce";
-            numForce.Size = new Size(190, 27);
+            numForce.Size = new Size(124, 27);
             numForce.TabIndex = 4;
             numForce.ThousandsSeparator = true;
+            // 
+            // cmbAreaUnit
+            // 
+            cmbAreaUnit.Dock = DockStyle.Fill;
+            cmbAreaUnit.FormattingEnabled = true;
+            cmbAreaUnit.Items.AddRange(new object[] { "m²", "cm²" });
+            cmbAreaUnit.Location = new Point(286, 37);
+            cmbAreaUnit.Name = "cmbAreaUnit";
+            cmbAreaUnit.Size = new Size(55, 28);
+            cmbAreaUnit.TabIndex = 2;
+            // 
+            // cmbPressureUnitSolid
+            // 
+            cmbPressureUnitSolid.Dock = DockStyle.Fill;
+            cmbPressureUnitSolid.FormattingEnabled = true;
+            cmbPressureUnitSolid.Items.AddRange(new object[] { "Pa", "atm" });
+            cmbPressureUnitSolid.Location = new Point(286, 71);
+            cmbPressureUnitSolid.Name = "cmbPressureUnitSolid";
+            cmbPressureUnitSolid.Size = new Size(55, 28);
+            cmbPressureUnitSolid.TabIndex = 2;
             // 
             // lblResultSolid
             // 
             lblResultSolid.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             lblResultSolid.AutoSize = true;
             lblResultSolid.Font = new Font("Segoe UI", 22.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblResultSolid.Location = new Point(513, 0);
+            lblResultSolid.Location = new Point(500, 34);
             lblResultSolid.Name = "lblResultSolid";
-            tableLayoutPanel1.SetRowSpan(lblResultSolid, 3);
-            lblResultSolid.Size = new Size(270, 102);
+            tableLayoutPanel1.SetRowSpan(lblResultSolid, 2);
+            lblResultSolid.Size = new Size(283, 68);
             lblResultSolid.TabIndex = 7;
             lblResultSolid.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // flowLayoutPanel1
+            // 
+            flowLayoutPanel1.Controls.Add(rd1Solid);
+            flowLayoutPanel1.Controls.Add(rd2Solid);
+            flowLayoutPanel1.Controls.Add(rd3Solid);
+            flowLayoutPanel1.Location = new Point(500, 3);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
+            flowLayoutPanel1.Size = new Size(283, 28);
+            flowLayoutPanel1.TabIndex = 8;
+            // 
+            // rd1Solid
+            // 
+            rd1Solid.AutoSize = true;
+            rd1Solid.Checked = true;
+            rd1Solid.Location = new Point(3, 3);
+            rd1Solid.Name = "rd1Solid";
+            rd1Solid.Size = new Size(79, 24);
+            rd1Solid.TabIndex = 0;
+            rd1Solid.TabStop = true;
+            rd1Solid.Text = "SI Units";
+            rd1Solid.UseVisualStyleBackColor = true;
+            // 
+            // rd2Solid
+            // 
+            rd2Solid.AutoSize = true;
+            rd2Solid.Location = new Point(88, 3);
+            rd2Solid.Name = "rd2Solid";
+            rd2Solid.Size = new Size(56, 24);
+            rd2Solid.TabIndex = 0;
+            rd2Solid.Text = "atm";
+            rd2Solid.UseVisualStyleBackColor = true;
+            // 
+            // rd3Solid
+            // 
+            rd3Solid.AutoSize = true;
+            rd3Solid.Location = new Point(150, 3);
+            rd3Solid.Name = "rd3Solid";
+            rd3Solid.Size = new Size(70, 24);
+            rd3Solid.TabIndex = 0;
+            rd3Solid.Text = "cmHg";
+            rd3Solid.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
@@ -422,6 +508,8 @@
             ((System.ComponentModel.ISupportInitialize)numPressureSolid).EndInit();
             ((System.ComponentModel.ISupportInitialize)numArea).EndInit();
             ((System.ComponentModel.ISupportInitialize)numForce).EndInit();
+            flowLayoutPanel1.ResumeLayout(false);
+            flowLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             tabFluid.ResumeLayout(false);
             tableLayoutPanel2.ResumeLayout(false);
@@ -464,5 +552,12 @@
         private NumericUpDown numericUpDown3;
         private Label label10;
         private PictureBox pictureBox2;
+        private ComboBox cmbForceUnit;
+        private ComboBox cmbAreaUnit;
+        private ComboBox cmbPressureUnitSolid;
+        private FlowLayoutPanel flowLayoutPanel1;
+        private RadioButton rd1Solid;
+        private RadioButton rd2Solid;
+        private RadioButton rd3Solid;
     }
 }
