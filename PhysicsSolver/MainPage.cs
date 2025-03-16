@@ -4,16 +4,14 @@
     {
         public MainPage()
         {
+            Icon = Icon.ExtractAssociatedIcon(Application.ExecutablePath);
             InitializeComponent();
-        }
-
-        private void MainPage_Load(object sender, EventArgs e)
-        {
         }
 
         private void btnPresure_Click(object sender, EventArgs e)
         {
             var frmPressure = new PressureFrm();
+            frmPressure.Icon = Icon;
             frmPressure.Show();
         }
     }

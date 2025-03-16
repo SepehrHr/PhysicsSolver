@@ -82,8 +82,7 @@
             Controls.Add(tableLayoutPanel1);
             Name = "MainPage";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "MainPage";
-            Load += MainPage_Load;
+            Text = "Physics Solver";
             tableLayoutPanel1.ResumeLayout(false);
             ResumeLayout(false);
         }
