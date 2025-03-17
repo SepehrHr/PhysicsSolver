@@ -628,6 +628,9 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 297);
             Controls.Add(tabControl1);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "PressureFrm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "PressureFrm";

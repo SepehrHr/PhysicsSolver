@@ -301,6 +301,9 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 297);
             Controls.Add(groupBox1);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "Density";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Density";

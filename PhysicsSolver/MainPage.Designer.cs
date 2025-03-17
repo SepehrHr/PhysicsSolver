@@ -94,6 +94,7 @@
             ClientSize = new Size(482, 328);
             Controls.Add(lblWelcome);
             Controls.Add(tableLayoutPanel1);
+            MaximizeBox = false;
             Name = "MainPage";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Physics Solver";
