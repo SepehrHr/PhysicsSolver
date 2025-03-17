@@ -31,6 +31,7 @@
             lblWelcome = new Label();
             btnPresure = new Button();
             tableLayoutPanel1 = new TableLayoutPanel();
+            btnDensity = new Button();
             tableLayoutPanel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -64,6 +65,7 @@
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel1.Controls.Add(btnPresure, 0, 0);
+            tableLayoutPanel1.Controls.Add(btnDensity, 0, 1);
             tableLayoutPanel1.Dock = DockStyle.Bottom;
             tableLayoutPanel1.Location = new Point(0, 53);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -72,6 +74,18 @@
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanel1.Size = new Size(482, 275);
             tableLayoutPanel1.TabIndex = 2;
+            // 
+            // btnDensity
+            // 
+            btnDensity.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            tableLayoutPanel1.SetColumnSpan(btnDensity, 2);
+            btnDensity.Location = new Point(3, 140);
+            btnDensity.Name = "btnDensity";
+            btnDensity.Size = new Size(476, 131);
+            btnDensity.TabIndex = 1;
+            btnDensity.Text = "Density";
+            btnDensity.UseVisualStyleBackColor = true;
+            btnDensity.Click += btnDensity_Click;
             // 
             // MainPage
             // 
@@ -92,5 +106,6 @@
         private Label lblWelcome;
         private Button btnPresure;
         private TableLayoutPanel tableLayoutPanel1;
+        private Button btnDensity;
     }
 }

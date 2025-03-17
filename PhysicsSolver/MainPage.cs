@@ -14,5 +14,12 @@
             frmPressure.Icon = Icon;
             frmPressure.Show();
         }
+
+        private void btnDensity_Click(object sender, EventArgs e)
+        {
+            var frmDesity = new Density();
+            frmDesity.Icon = Icon;
+            frmDesity.Show();
+        }
     }
 }
