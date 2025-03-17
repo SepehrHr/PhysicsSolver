@@ -122,7 +122,7 @@
             numRho.Maximum = new decimal(new int[] { 99999, 0, 0, 0 });
             numRho.Name = "numRho";
             numRho.Size = new Size(125, 27);
-            numRho.TabIndex = 6;
+            numRho.TabIndex = 5;
             numRho.ThousandsSeparator = true;
             // 
             // numVolume
@@ -132,7 +132,7 @@
             numVolume.Maximum = new decimal(new int[] { 99999, 0, 0, 0 });
             numVolume.Name = "numVolume";
             numVolume.Size = new Size(125, 27);
-            numVolume.TabIndex = 5;
+            numVolume.TabIndex = 3;
             numVolume.ThousandsSeparator = true;
             // 
             // label2
@@ -170,7 +170,7 @@
             btnCalculate.Margin = new Padding(80, 3, 80, 3);
             btnCalculate.Name = "btnCalculate";
             btnCalculate.Size = new Size(634, 32);
-            btnCalculate.TabIndex = 2;
+            btnCalculate.TabIndex = 7;
             btnCalculate.Text = "Calculate";
             btnCalculate.UseVisualStyleBackColor = true;
             btnCalculate.Click += btnCalculate_Click;
@@ -206,7 +206,7 @@
             numMass.Maximum = new decimal(new int[] { 99999, 0, 0, 0 });
             numMass.Name = "numMass";
             numMass.Size = new Size(124, 27);
-            numMass.TabIndex = 4;
+            numMass.TabIndex = 1;
             numMass.ThousandsSeparator = true;
             // 
             // cmbVolumeUnit
@@ -217,7 +217,7 @@
             cmbVolumeUnit.Location = new Point(288, 40);
             cmbVolumeUnit.Name = "cmbVolumeUnit";
             cmbVolumeUnit.Size = new Size(55, 28);
-            cmbVolumeUnit.TabIndex = 2;
+            cmbVolumeUnit.TabIndex = 4;
             // 
             // cmbRhoUnit
             // 
@@ -227,7 +227,7 @@
             cmbRhoUnit.Location = new Point(288, 77);
             cmbRhoUnit.Name = "cmbRhoUnit";
             cmbRhoUnit.Size = new Size(55, 28);
-            cmbRhoUnit.TabIndex = 2;
+            cmbRhoUnit.TabIndex = 6;
             // 
             // lblResult
             // 
@@ -238,7 +238,7 @@
             lblResult.Name = "lblResult";
             tableLayoutPanel1.SetRowSpan(lblResult, 2);
             lblResult.Size = new Size(288, 74);
-            lblResult.TabIndex = 7;
+            lblResult.TabIndex = 9;
             lblResult.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // flowLayoutPanel1
@@ -269,7 +269,7 @@
             rd2Solid.Location = new Point(139, 3);
             rd2Solid.Name = "rd2Solid";
             rd2Solid.Size = new Size(52, 24);
-            rd2Solid.TabIndex = 0;
+            rd2Solid.TabIndex = 1;
             rd2Solid.Text = "g/L";
             rd2Solid.UseVisualStyleBackColor = true;
             // 
@@ -279,7 +279,7 @@
             rd3Solid.Location = new Point(197, 3);
             rd3Solid.Name = "rd3Solid";
             rd3Solid.Size = new Size(71, 24);
-            rd3Solid.TabIndex = 0;
+            rd3Solid.TabIndex = 2;
             rd3Solid.Text = "g/cm³";
             rd3Solid.UseVisualStyleBackColor = true;
             // 

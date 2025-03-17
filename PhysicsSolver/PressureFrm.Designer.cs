@@ -160,7 +160,7 @@
             cmbForceUnit.Location = new Point(286, 3);
             cmbForceUnit.Name = "cmbForceUnit";
             cmbForceUnit.Size = new Size(55, 28);
-            cmbForceUnit.TabIndex = 2;
+            cmbForceUnit.TabIndex = 1;
             // 
             // numPressureSolid
             // 
@@ -169,7 +169,7 @@
             numPressureSolid.Maximum = new decimal(new int[] { 99999, 0, 0, 0 });
             numPressureSolid.Name = "numPressureSolid";
             numPressureSolid.Size = new Size(124, 27);
-            numPressureSolid.TabIndex = 6;
+            numPressureSolid.TabIndex = 4;
             numPressureSolid.ThousandsSeparator = true;
             // 
             // numArea
@@ -179,7 +179,7 @@
             numArea.Maximum = new decimal(new int[] { 99999, 0, 0, 0 });
             numArea.Name = "numArea";
             numArea.Size = new Size(124, 27);
-            numArea.TabIndex = 5;
+            numArea.TabIndex = 2;
             numArea.ThousandsSeparator = true;
             // 
             // label2
@@ -217,7 +217,7 @@
             CalculateSolids.Margin = new Padding(80, 3, 80, 3);
             CalculateSolids.Name = "CalculateSolids";
             CalculateSolids.Size = new Size(626, 28);
-            CalculateSolids.TabIndex = 2;
+            CalculateSolids.TabIndex = 6;
             CalculateSolids.Text = "Calculate";
             CalculateSolids.UseVisualStyleBackColor = true;
             CalculateSolids.Click += CalculateSolids_Click;
@@ -253,7 +253,7 @@
             numForce.Maximum = new decimal(new int[] { 99999, 0, 0, 0 });
             numForce.Name = "numForce";
             numForce.Size = new Size(124, 27);
-            numForce.TabIndex = 4;
+            numForce.TabIndex = 0;
             numForce.ThousandsSeparator = true;
             // 
             // cmbAreaUnit
@@ -264,7 +264,7 @@
             cmbAreaUnit.Location = new Point(286, 37);
             cmbAreaUnit.Name = "cmbAreaUnit";
             cmbAreaUnit.Size = new Size(55, 28);
-            cmbAreaUnit.TabIndex = 2;
+            cmbAreaUnit.TabIndex = 3;
             // 
             // cmbPressureUnitSolid
             // 
@@ -274,7 +274,7 @@
             cmbPressureUnitSolid.Location = new Point(286, 71);
             cmbPressureUnitSolid.Name = "cmbPressureUnitSolid";
             cmbPressureUnitSolid.Size = new Size(55, 28);
-            cmbPressureUnitSolid.TabIndex = 2;
+            cmbPressureUnitSolid.TabIndex = 5;
             // 
             // lblResultSolid
             // 
@@ -285,7 +285,7 @@
             lblResultSolid.Name = "lblResultSolid";
             tableLayoutPanel1.SetRowSpan(lblResultSolid, 2);
             lblResultSolid.Size = new Size(283, 68);
-            lblResultSolid.TabIndex = 7;
+            lblResultSolid.TabIndex = 9;
             lblResultSolid.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // flowLayoutPanel1
@@ -316,7 +316,7 @@
             rd2Solid.Location = new Point(88, 3);
             rd2Solid.Name = "rd2Solid";
             rd2Solid.Size = new Size(56, 24);
-            rd2Solid.TabIndex = 0;
+            rd2Solid.TabIndex = 1;
             rd2Solid.Text = "atm";
             rd2Solid.UseVisualStyleBackColor = true;
             // 
@@ -326,7 +326,7 @@
             rd3Solid.Location = new Point(150, 3);
             rd3Solid.Name = "rd3Solid";
             rd3Solid.Size = new Size(70, 24);
-            rd3Solid.TabIndex = 0;
+            rd3Solid.TabIndex = 2;
             rd3Solid.Text = "cmHg";
             rd3Solid.UseVisualStyleBackColor = true;
             // 
@@ -401,7 +401,7 @@
             cmbPressureUnitFliud.Location = new Point(280, 99);
             cmbPressureUnitFliud.Name = "cmbPressureUnitFliud";
             cmbPressureUnitFliud.Size = new Size(70, 28);
-            cmbPressureUnitFliud.TabIndex = 10;
+            cmbPressureUnitFliud.TabIndex = 7;
             // 
             // numPressureFliud
             // 
@@ -410,7 +410,7 @@
             numPressureFliud.Maximum = new decimal(new int[] { 99999, 0, 0, 0 });
             numPressureFliud.Name = "numPressureFliud";
             numPressureFliud.Size = new Size(121, 27);
-            numPressureFliud.TabIndex = 9;
+            numPressureFliud.TabIndex = 6;
             numPressureFliud.ThousandsSeparator = true;
             // 
             // cmbRhoUnit
@@ -421,7 +421,7 @@
             cmbRhoUnit.Location = new Point(280, 3);
             cmbRhoUnit.Name = "cmbRhoUnit";
             cmbRhoUnit.Size = new Size(70, 28);
-            cmbRhoUnit.TabIndex = 2;
+            cmbRhoUnit.TabIndex = 1;
             // 
             // numHeight
             // 
@@ -430,7 +430,7 @@
             numHeight.Maximum = new decimal(new int[] { 99999, 0, 0, 0 });
             numHeight.Name = "numHeight";
             numHeight.Size = new Size(121, 27);
-            numHeight.TabIndex = 6;
+            numHeight.TabIndex = 4;
             numHeight.ThousandsSeparator = true;
             // 
             // numG
@@ -440,7 +440,7 @@
             numG.Maximum = new decimal(new int[] { 99999, 0, 0, 0 });
             numG.Name = "numG";
             numG.Size = new Size(121, 27);
-            numG.TabIndex = 5;
+            numG.TabIndex = 2;
             numG.ThousandsSeparator = true;
             numG.Value = new decimal(new int[] { 98, 0, 0, 65536 });
             // 
@@ -479,7 +479,7 @@
             btnCalculateFliuds.Margin = new Padding(80, 3, 80, 3);
             btnCalculateFliuds.Name = "btnCalculateFliuds";
             btnCalculateFliuds.Size = new Size(626, 30);
-            btnCalculateFliuds.TabIndex = 2;
+            btnCalculateFliuds.TabIndex = 8;
             btnCalculateFliuds.Text = "Calculate";
             btnCalculateFliuds.UseVisualStyleBackColor = true;
             btnCalculateFliuds.Click += btnCalculateFliuds_Click;
@@ -515,7 +515,7 @@
             numRho.Maximum = new decimal(new int[] { 99999, 0, 0, 0 });
             numRho.Name = "numRho";
             numRho.Size = new Size(121, 27);
-            numRho.TabIndex = 4;
+            numRho.TabIndex = 0;
             numRho.ThousandsSeparator = true;
             // 
             // cmbGUnit
@@ -527,7 +527,7 @@
             cmbGUnit.Location = new Point(280, 35);
             cmbGUnit.Name = "cmbGUnit";
             cmbGUnit.Size = new Size(70, 28);
-            cmbGUnit.TabIndex = 2;
+            cmbGUnit.TabIndex = 3;
             // 
             // cmbHeightUnit
             // 
@@ -537,7 +537,7 @@
             cmbHeightUnit.Location = new Point(280, 67);
             cmbHeightUnit.Name = "cmbHeightUnit";
             cmbHeightUnit.Size = new Size(70, 28);
-            cmbHeightUnit.TabIndex = 2;
+            cmbHeightUnit.TabIndex = 5;
             // 
             // lblResultFliuds
             // 
