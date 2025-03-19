@@ -119,7 +119,7 @@
             // 
             numRho.Dock = DockStyle.Fill;
             numRho.Location = new Point(157, 77);
-            numRho.Maximum = new decimal(new int[] { 99999, 0, 0, 0 });
+            numRho.Maximum = new decimal(new int[] { 999999999, 0, 0, 0 });
             numRho.Name = "numRho";
             numRho.Size = new Size(125, 27);
             numRho.TabIndex = 5;
@@ -129,7 +129,7 @@
             // 
             numVolume.Dock = DockStyle.Fill;
             numVolume.Location = new Point(157, 40);
-            numVolume.Maximum = new decimal(new int[] { 99999, 0, 0, 0 });
+            numVolume.Maximum = new decimal(new int[] { 999999999, 0, 0, 0 });
             numVolume.Name = "numVolume";
             numVolume.Size = new Size(125, 27);
             numVolume.TabIndex = 3;
@@ -203,7 +203,7 @@
             // 
             numMass.Dock = DockStyle.Left;
             numMass.Location = new Point(157, 3);
-            numMass.Maximum = new decimal(new int[] { 99999, 0, 0, 0 });
+            numMass.Maximum = new decimal(new int[] { 999999999, 0, 0, 0 });
             numMass.Name = "numMass";
             numMass.Size = new Size(124, 27);
             numMass.TabIndex = 1;

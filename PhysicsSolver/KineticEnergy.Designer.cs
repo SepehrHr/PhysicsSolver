@@ -118,7 +118,7 @@
             // 
             numK.Dock = DockStyle.Fill;
             numK.Location = new Point(157, 77);
-            numK.Maximum = new decimal(new int[] { 99999, 0, 0, 0 });
+            numK.Maximum = new decimal(new int[] { 999999999, 0, 0, 0 });
             numK.Name = "numK";
             numK.Size = new Size(125, 27);
             numK.TabIndex = 5;
@@ -128,7 +128,7 @@
             // 
             numVelocity.Dock = DockStyle.Fill;
             numVelocity.Location = new Point(157, 40);
-            numVelocity.Maximum = new decimal(new int[] { 99999, 0, 0, 0 });
+            numVelocity.Maximum = new decimal(new int[] { 999999999, 0, 0, 0 });
             numVelocity.Name = "numVelocity";
             numVelocity.Size = new Size(125, 27);
             numVelocity.TabIndex = 3;
@@ -202,7 +202,7 @@
             // 
             numMass.Dock = DockStyle.Left;
             numMass.Location = new Point(157, 3);
-            numMass.Maximum = new decimal(new int[] { 99999, 0, 0, 0 });
+            numMass.Maximum = new decimal(new int[] { 999999999, 0, 0, 0 });
             numMass.Name = "numMass";
             numMass.Size = new Size(124, 27);
             numMass.TabIndex = 1;

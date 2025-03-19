@@ -166,7 +166,7 @@
             // 
             numPressureSolid.Dock = DockStyle.Fill;
             numPressureSolid.Location = new Point(156, 71);
-            numPressureSolid.Maximum = new decimal(new int[] { 99999, 0, 0, 0 });
+            numPressureSolid.Maximum = new decimal(new int[] { 999999999, 0, 0, 0 });
             numPressureSolid.Name = "numPressureSolid";
             numPressureSolid.Size = new Size(124, 27);
             numPressureSolid.TabIndex = 4;
@@ -176,7 +176,7 @@
             // 
             numArea.Dock = DockStyle.Fill;
             numArea.Location = new Point(156, 37);
-            numArea.Maximum = new decimal(new int[] { 99999, 0, 0, 0 });
+            numArea.Maximum = new decimal(new int[] { 999999999, 0, 0, 0 });
             numArea.Name = "numArea";
             numArea.Size = new Size(124, 27);
             numArea.TabIndex = 2;
@@ -250,7 +250,7 @@
             // 
             numForce.Dock = DockStyle.Left;
             numForce.Location = new Point(156, 3);
-            numForce.Maximum = new decimal(new int[] { 99999, 0, 0, 0 });
+            numForce.Maximum = new decimal(new int[] { 999999999, 0, 0, 0 });
             numForce.Name = "numForce";
             numForce.Size = new Size(124, 27);
             numForce.TabIndex = 0;
@@ -407,7 +407,7 @@
             // 
             numPressureFliud.Dock = DockStyle.Fill;
             numPressureFliud.Location = new Point(153, 99);
-            numPressureFliud.Maximum = new decimal(new int[] { 99999, 0, 0, 0 });
+            numPressureFliud.Maximum = new decimal(new int[] { 999999999, 0, 0, 0 });
             numPressureFliud.Name = "numPressureFliud";
             numPressureFliud.Size = new Size(121, 27);
             numPressureFliud.TabIndex = 6;
@@ -427,7 +427,7 @@
             // 
             numHeight.Dock = DockStyle.Fill;
             numHeight.Location = new Point(153, 67);
-            numHeight.Maximum = new decimal(new int[] { 99999, 0, 0, 0 });
+            numHeight.Maximum = new decimal(new int[] { 999999999, 0, 0, 0 });
             numHeight.Name = "numHeight";
             numHeight.Size = new Size(121, 27);
             numHeight.TabIndex = 4;
@@ -437,7 +437,7 @@
             // 
             numG.Dock = DockStyle.Fill;
             numG.Location = new Point(153, 35);
-            numG.Maximum = new decimal(new int[] { 99999, 0, 0, 0 });
+            numG.Maximum = new decimal(new int[] { 999999999, 0, 0, 0 });
             numG.Name = "numG";
             numG.Size = new Size(121, 27);
             numG.TabIndex = 2;
@@ -512,7 +512,7 @@
             // 
             numRho.Dock = DockStyle.Left;
             numRho.Location = new Point(153, 3);
-            numRho.Maximum = new decimal(new int[] { 99999, 0, 0, 0 });
+            numRho.Maximum = new decimal(new int[] { 999999999, 0, 0, 0 });
             numRho.Name = "numRho";
             numRho.Size = new Size(121, 27);
             numRho.TabIndex = 0;
