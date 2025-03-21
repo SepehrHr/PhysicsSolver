@@ -28,5 +28,12 @@
             frmDesity.Icon = Icon;
             frmDesity.Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            var frmWork = new Work();
+            frmWork.Icon = Icon;
+            frmWork.Show();
+        }
     }
 }

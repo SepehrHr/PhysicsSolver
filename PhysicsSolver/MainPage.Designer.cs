@@ -100,6 +100,7 @@
             button3.TabIndex = 2;
             button3.Text = "Work";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // btnKinetic
             // 
