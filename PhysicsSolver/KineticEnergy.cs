@@ -41,7 +41,7 @@ namespace PhysicsSolver
                 else resultStr = String.Format("{0:0.00}", result) + "J";
 
                 lblK.Text = resultStr;
-                lblMass.Text = $"{k}Kg";
+                lblMass.Text = $"{mass}Kg";
                 lblVelocity.Text = $"{velocity}m/s";
                 lblResult.Text = resultStr;
             }
@@ -62,8 +62,8 @@ namespace PhysicsSolver
             }
             else if (velocity == 0)
             {
-                rd1Solid.Visible = true; rd1Solid.Text = "m³";
-                rd2Solid.Visible = true; rd2Solid.Text = "cm³";
+                rd1Solid.Visible = true; rd1Solid.Text = "m/s";
+                rd2Solid.Visible = true; rd2Solid.Text = "Km/h";
                 var result = Math.Sqrt((double)k / (0.5 * (double)mass));
                 string resultStr;
 
