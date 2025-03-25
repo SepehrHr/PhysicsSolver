@@ -78,7 +78,7 @@ namespace PhysicsSolver
                 var result = mass * height / u;
                 string resultStr = String.Format("{0:0.00}", result) + "m/s²";
 
-                lblMass.Text = result + "Kg";
+                lblMass.Text = mass + "Kg";
                 lblG.Text = resultStr;
                 lblHeight.Text = height + "m";
                 lblU.Text = u + "J";
@@ -100,7 +100,7 @@ namespace PhysicsSolver
                 if (rd2.Checked) resultStr = String.Format("{0:0.00}", result * 100) + "cm";
                 else resultStr = String.Format("{0:0.00}", result) + "m";
 
-                lblMass.Text = result + "Kg";
+                lblMass.Text = mass + "Kg";
                 lblG.Text = g + "m/s²";
                 lblHeight.Text = result + "m";
                 lblU.Text = u + "J";

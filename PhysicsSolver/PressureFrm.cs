@@ -149,7 +149,7 @@ namespace PhysicsSolver
                 var result = rho * height / pressure;
                 string resultStr = String.Format("{0:0.00}", result) + "m/s²";
 
-                lblRho.Text = result + "Kg/m³";
+                lblRho.Text = rho + "Kg/m³";
                 lblG.Text = resultStr;
                 lblHeight.Text = height + "m";
                 lblPressureFliuds.Text = pressure + "Pa";
@@ -172,7 +172,7 @@ namespace PhysicsSolver
                 if (rd2Fliud.Checked) resultStr = String.Format("{0:0.00}", result * 100) + "cm";
                 else resultStr = String.Format("{0:0.00}", result) + "m";
 
-                lblRho.Text = result + "Kg/m³";
+                lblRho.Text = rho + "Kg/m³";
                 lblG.Text = g + "m/s²";
                 lblHeight.Text = result + "m";
                 lblPressureFliuds.Text = pressure + "Pa";
