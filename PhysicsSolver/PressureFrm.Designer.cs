@@ -169,6 +169,7 @@
             // 
             // numPressureSolid
             // 
+            numPressureSolid.DecimalPlaces = 2;
             numPressureSolid.Dock = DockStyle.Fill;
             numPressureSolid.Location = new Point(156, 71);
             numPressureSolid.Maximum = new decimal(new int[] { 999999999, 0, 0, 0 });
@@ -179,6 +180,7 @@
             // 
             // numArea
             // 
+            numArea.DecimalPlaces = 2;
             numArea.Dock = DockStyle.Fill;
             numArea.Location = new Point(156, 37);
             numArea.Maximum = new decimal(new int[] { 999999999, 0, 0, 0 });
@@ -253,6 +255,7 @@
             // 
             // numForce
             // 
+            numForce.DecimalPlaces = 2;
             numForce.Dock = DockStyle.Left;
             numForce.Location = new Point(156, 3);
             numForce.Maximum = new decimal(new int[] { 999999999, 0, 0, 0 });
@@ -442,6 +445,7 @@
             // 
             // numPressureFliud
             // 
+            numPressureFliud.DecimalPlaces = 2;
             numPressureFliud.Dock = DockStyle.Fill;
             numPressureFliud.Location = new Point(153, 99);
             numPressureFliud.Maximum = new decimal(new int[] { 999999999, 0, 0, 0 });
@@ -462,6 +466,7 @@
             // 
             // numHeight
             // 
+            numHeight.DecimalPlaces = 2;
             numHeight.Dock = DockStyle.Fill;
             numHeight.Location = new Point(153, 67);
             numHeight.Maximum = new decimal(new int[] { 999999999, 0, 0, 0 });
@@ -472,6 +477,7 @@
             // 
             // numG
             // 
+            numG.DecimalPlaces = 2;
             numG.Dock = DockStyle.Fill;
             numG.Location = new Point(153, 35);
             numG.Maximum = new decimal(new int[] { 999999999, 0, 0, 0 });
@@ -547,6 +553,7 @@
             // 
             // numRho
             // 
+            numRho.DecimalPlaces = 2;
             numRho.Dock = DockStyle.Left;
             numRho.Location = new Point(153, 3);
             numRho.Maximum = new decimal(new int[] { 999999999, 0, 0, 0 });
@@ -634,7 +641,6 @@
             // 
             // splitter2
             // 
-            splitter2.Cursor = Cursors.Arrow;
             splitter2.Location = new Point(226, 3);
             splitter2.Name = "splitter2";
             splitter2.Size = new Size(4, 24);

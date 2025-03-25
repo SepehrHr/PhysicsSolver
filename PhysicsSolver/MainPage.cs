@@ -35,5 +35,12 @@
             frmWork.Icon = Icon;
             frmWork.Show();
         }
+
+        private void btnU_Click(object sender, EventArgs e)
+        {
+            var frmU = new Gravitational();
+            frmU.Icon = Icon;
+            frmU.Show();
+        }
     }
 }

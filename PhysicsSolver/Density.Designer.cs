@@ -49,8 +49,8 @@
             rd1Solid = new RadioButton();
             rd2Solid = new RadioButton();
             rd3Solid = new RadioButton();
-            pictureBox1 = new PictureBox();
             btnCopy = new Button();
+            pictureBox1 = new PictureBox();
             groupBox1.SuspendLayout();
             tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)numRho).BeginInit();
@@ -118,6 +118,7 @@
             // 
             // numRho
             // 
+            numRho.DecimalPlaces = 2;
             numRho.Dock = DockStyle.Fill;
             numRho.Location = new Point(159, 77);
             numRho.Maximum = new decimal(new int[] { 999999999, 0, 0, 0 });
@@ -128,6 +129,7 @@
             // 
             // numVolume
             // 
+            numVolume.DecimalPlaces = 2;
             numVolume.Dock = DockStyle.Fill;
             numVolume.Location = new Point(159, 40);
             numVolume.Maximum = new decimal(new int[] { 999999999, 0, 0, 0 });
@@ -202,6 +204,7 @@
             // 
             // numMass
             // 
+            numMass.DecimalPlaces = 2;
             numMass.Dock = DockStyle.Left;
             numMass.Location = new Point(159, 3);
             numMass.Maximum = new decimal(new int[] { 999999999, 0, 0, 0 });
@@ -285,18 +288,6 @@
             rd3Solid.Text = "g/cm³";
             rd3Solid.UseVisualStyleBackColor = true;
             // 
-            // pictureBox1
-            // 
-            pictureBox1.BackColor = Color.White;
-            pictureBox1.Dock = DockStyle.Top;
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(3, 23);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(794, 122);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 2;
-            pictureBox1.TabStop = false;
-            // 
             // btnCopy
             // 
             btnCopy.BackgroundImage = (Image)resources.GetObject("btnCopy.BackgroundImage");
@@ -308,6 +299,18 @@
             btnCopy.TabIndex = 6;
             btnCopy.UseVisualStyleBackColor = true;
             btnCopy.Click += btnCopy_Click;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.BackColor = Color.White;
+            pictureBox1.Dock = DockStyle.Top;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(3, 23);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(794, 122);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 2;
+            pictureBox1.TabStop = false;
             // 
             // Density
             // 

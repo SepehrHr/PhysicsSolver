@@ -128,6 +128,7 @@
             // 
             // numWork
             // 
+            numWork.DecimalPlaces = 2;
             numWork.Dock = DockStyle.Fill;
             numWork.Location = new Point(154, 102);
             numWork.Maximum = new decimal(new int[] { 999999999, 0, 0, 0 });
@@ -149,6 +150,7 @@
             // 
             // numAlpha
             // 
+            numAlpha.DecimalPlaces = 2;
             numAlpha.Dock = DockStyle.Fill;
             numAlpha.Location = new Point(154, 69);
             numAlpha.Maximum = new decimal(new int[] { 999999999, 0, 0, 0 });
@@ -159,6 +161,7 @@
             // 
             // numDistance
             // 
+            numDistance.DecimalPlaces = 2;
             numDistance.Dock = DockStyle.Fill;
             numDistance.Location = new Point(154, 36);
             numDistance.Maximum = new decimal(new int[] { 999999999, 0, 0, 0 });
@@ -233,6 +236,7 @@
             // 
             // numForce
             // 
+            numForce.DecimalPlaces = 2;
             numForce.Dock = DockStyle.Left;
             numForce.Location = new Point(154, 3);
             numForce.Maximum = new decimal(new int[] { 999999999, 0, 0, 0 });
@@ -309,7 +313,6 @@
             // 
             // splitter1
             // 
-            splitter1.Cursor = Cursors.Arrow;
             splitter1.Location = new Point(95, 3);
             splitter1.Name = "splitter1";
             splitter1.Size = new Size(4, 24);

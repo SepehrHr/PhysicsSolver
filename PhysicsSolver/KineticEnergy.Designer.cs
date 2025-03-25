@@ -118,6 +118,7 @@
             // 
             // numK
             // 
+            numK.DecimalPlaces = 2;
             numK.Dock = DockStyle.Fill;
             numK.Location = new Point(157, 77);
             numK.Maximum = new decimal(new int[] { 999999999, 0, 0, 0 });
@@ -128,6 +129,7 @@
             // 
             // numVelocity
             // 
+            numVelocity.DecimalPlaces = 2;
             numVelocity.Dock = DockStyle.Fill;
             numVelocity.Location = new Point(157, 40);
             numVelocity.Maximum = new decimal(new int[] { 999999999, 0, 0, 0 });
@@ -202,6 +204,7 @@
             // 
             // numMass
             // 
+            numMass.DecimalPlaces = 2;
             numMass.Dock = DockStyle.Left;
             numMass.Location = new Point(157, 3);
             numMass.Maximum = new decimal(new int[] { 999999999, 0, 0, 0 });
@@ -277,7 +280,6 @@
             // 
             // splitter1
             // 
-            splitter1.Cursor = Cursors.Arrow;
             splitter1.BackColor = SystemColors.Control;
             splitter1.Location = new Point(95, 3);
             splitter1.Name = "splitter1";
