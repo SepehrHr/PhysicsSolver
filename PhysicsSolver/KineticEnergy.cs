@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -82,6 +83,20 @@ namespace PhysicsSolver
             else
             {
                 MessageBox.Show("The eqaution is not valid.", "Not valid", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnCopy_Click(object sender, EventArgs e)
+        {
+            string result = Regex.Replace(lblResult.Text, "[a-zA-Z/²³]", "");
+            try
+            {
+                Clipboard.SetText(result);
+                MessageBox.Show("Copied!", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch
+            {
+                MessageBox.Show("Error copying the result to clipboard.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

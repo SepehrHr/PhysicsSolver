@@ -50,6 +50,7 @@
             rd2Solid = new RadioButton();
             rd3Solid = new RadioButton();
             pictureBox1 = new PictureBox();
+            btnCopy = new Button();
             groupBox1.SuspendLayout();
             tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)numRho).BeginInit();
@@ -74,11 +75,11 @@
             // tableLayoutPanel1
             // 
             tableLayoutPanel1.ColumnCount = 5;
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 19.5122F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 16.5853653F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 7.804878F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 19.5121956F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 36.5853653F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 19.7287331F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 16.76942F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 7.891491F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 17.1886539F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 38.4216957F));
             tableLayoutPanel1.Controls.Add(cmbMassUnit, 2, 0);
             tableLayoutPanel1.Controls.Add(numRho, 1, 2);
             tableLayoutPanel1.Controls.Add(numVolume, 1, 1);
@@ -110,28 +111,28 @@
             cmbMassUnit.Dock = DockStyle.Fill;
             cmbMassUnit.FormattingEnabled = true;
             cmbMassUnit.Items.AddRange(new object[] { "Kg", "g" });
-            cmbMassUnit.Location = new Point(288, 3);
+            cmbMassUnit.Location = new Point(292, 3);
             cmbMassUnit.Name = "cmbMassUnit";
-            cmbMassUnit.Size = new Size(55, 28);
+            cmbMassUnit.Size = new Size(56, 28);
             cmbMassUnit.TabIndex = 2;
             // 
             // numRho
             // 
             numRho.Dock = DockStyle.Fill;
-            numRho.Location = new Point(157, 77);
+            numRho.Location = new Point(159, 77);
             numRho.Maximum = new decimal(new int[] { 999999999, 0, 0, 0 });
             numRho.Name = "numRho";
-            numRho.Size = new Size(125, 27);
+            numRho.Size = new Size(127, 27);
             numRho.TabIndex = 5;
             numRho.ThousandsSeparator = true;
             // 
             // numVolume
             // 
             numVolume.Dock = DockStyle.Fill;
-            numVolume.Location = new Point(157, 40);
+            numVolume.Location = new Point(159, 40);
             numVolume.Maximum = new decimal(new int[] { 999999999, 0, 0, 0 });
             numVolume.Name = "numVolume";
-            numVolume.Size = new Size(125, 27);
+            numVolume.Size = new Size(127, 27);
             numVolume.TabIndex = 3;
             numVolume.ThousandsSeparator = true;
             // 
@@ -178,7 +179,7 @@
             // lblMass
             // 
             lblMass.AutoSize = true;
-            lblMass.Location = new Point(349, 0);
+            lblMass.Location = new Point(354, 0);
             lblMass.Name = "lblMass";
             lblMass.Size = new Size(0, 20);
             lblMass.TabIndex = 3;
@@ -186,7 +187,7 @@
             // lblVolume
             // 
             lblVolume.AutoSize = true;
-            lblVolume.Location = new Point(349, 37);
+            lblVolume.Location = new Point(354, 37);
             lblVolume.Name = "lblVolume";
             lblVolume.Size = new Size(0, 20);
             lblVolume.TabIndex = 3;
@@ -194,7 +195,7 @@
             // lblRho
             // 
             lblRho.AutoSize = true;
-            lblRho.Location = new Point(349, 74);
+            lblRho.Location = new Point(354, 74);
             lblRho.Name = "lblRho";
             lblRho.Size = new Size(0, 20);
             lblRho.TabIndex = 3;
@@ -202,7 +203,7 @@
             // numMass
             // 
             numMass.Dock = DockStyle.Left;
-            numMass.Location = new Point(157, 3);
+            numMass.Location = new Point(159, 3);
             numMass.Maximum = new decimal(new int[] { 999999999, 0, 0, 0 });
             numMass.Name = "numMass";
             numMass.Size = new Size(124, 27);
@@ -214,9 +215,9 @@
             cmbVolumeUnit.Dock = DockStyle.Fill;
             cmbVolumeUnit.FormattingEnabled = true;
             cmbVolumeUnit.Items.AddRange(new object[] { "m³", "L", "cm³" });
-            cmbVolumeUnit.Location = new Point(288, 40);
+            cmbVolumeUnit.Location = new Point(292, 40);
             cmbVolumeUnit.Name = "cmbVolumeUnit";
-            cmbVolumeUnit.Size = new Size(55, 28);
+            cmbVolumeUnit.Size = new Size(56, 28);
             cmbVolumeUnit.TabIndex = 4;
             // 
             // cmbRhoUnit
@@ -224,9 +225,9 @@
             cmbRhoUnit.Dock = DockStyle.Fill;
             cmbRhoUnit.FormattingEnabled = true;
             cmbRhoUnit.Items.AddRange(new object[] { "Kg/m³", "g/L", "g/cm³" });
-            cmbRhoUnit.Location = new Point(288, 77);
+            cmbRhoUnit.Location = new Point(292, 77);
             cmbRhoUnit.Name = "cmbRhoUnit";
-            cmbRhoUnit.Size = new Size(55, 28);
+            cmbRhoUnit.Size = new Size(56, 28);
             cmbRhoUnit.TabIndex = 6;
             // 
             // lblResult
@@ -234,10 +235,10 @@
             lblResult.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             lblResult.AutoSize = true;
             lblResult.Font = new Font("Segoe UI", 22.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblResult.Location = new Point(503, 37);
+            lblResult.Location = new Point(490, 37);
             lblResult.Name = "lblResult";
             tableLayoutPanel1.SetRowSpan(lblResult, 2);
-            lblResult.Size = new Size(288, 74);
+            lblResult.Size = new Size(301, 74);
             lblResult.TabIndex = 9;
             lblResult.TextAlign = ContentAlignment.MiddleCenter;
             // 
@@ -246,9 +247,10 @@
             flowLayoutPanel1.Controls.Add(rd1Solid);
             flowLayoutPanel1.Controls.Add(rd2Solid);
             flowLayoutPanel1.Controls.Add(rd3Solid);
-            flowLayoutPanel1.Location = new Point(503, 3);
+            flowLayoutPanel1.Controls.Add(btnCopy);
+            flowLayoutPanel1.Location = new Point(490, 3);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(283, 28);
+            flowLayoutPanel1.Size = new Size(301, 28);
             flowLayoutPanel1.TabIndex = 8;
             // 
             // rd1Solid
@@ -294,6 +296,18 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 2;
             pictureBox1.TabStop = false;
+            // 
+            // btnCopy
+            // 
+            btnCopy.BackgroundImage = (Image)resources.GetObject("btnCopy.BackgroundImage");
+            btnCopy.BackgroundImageLayout = ImageLayout.Zoom;
+            btnCopy.Dock = DockStyle.Right;
+            btnCopy.Location = new Point(274, 3);
+            btnCopy.Name = "btnCopy";
+            btnCopy.Size = new Size(24, 24);
+            btnCopy.TabIndex = 6;
+            btnCopy.UseVisualStyleBackColor = true;
+            btnCopy.Click += btnCopy_Click;
             // 
             // Density
             // 
@@ -343,5 +357,6 @@
         private RadioButton rd2Solid;
         private RadioButton rd3Solid;
         private PictureBox pictureBox1;
+        private Button btnCopy;
     }
 }

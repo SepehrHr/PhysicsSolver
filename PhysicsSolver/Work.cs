@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -26,7 +27,7 @@ namespace PhysicsSolver
             }
             decimal force = numForce.Value;
             decimal distance = cmbDistanceUnit.SelectedIndex == 0 ? numDistance.Value : numDistance.Value / 100;
-            decimal cosAlpha = (decimal)Math.Cos((double)numAlpha.Value * (Math.PI  / 180));
+            decimal cosAlpha = (decimal)Math.Cos((double)numAlpha.Value * (Math.PI / 180));
             decimal work = cmbWorkUnit.SelectedIndex == 0 ? numWork.Value : numWork.Value * 1000;
 
             if (work == 0)
@@ -116,6 +117,20 @@ namespace PhysicsSolver
             cmbDistanceUnit.SelectedIndex = 0;
             cmbForceUnit.SelectedIndex = 0;
             cmbWorkUnit.SelectedIndex = 0;
+        }
+
+        private void btnCopy_Click(object sender, EventArgs e)
+        {
+            string result = Regex.Replace(lblResult.Text, "[a-zA-Z/²³]", "");
+            try
+            {
+                Clipboard.SetText(result);
+                MessageBox.Show("Copied!", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch
+            {
+                MessageBox.Show("Error copying the result to clipboard.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

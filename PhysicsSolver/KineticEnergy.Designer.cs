@@ -48,6 +48,8 @@
             flowLayoutPanel1 = new FlowLayoutPanel();
             rd1Solid = new RadioButton();
             rd2Solid = new RadioButton();
+            splitter1 = new Splitter();
+            btnCopy = new Button();
             pictureBox1 = new PictureBox();
             groupBox1.SuspendLayout();
             tableLayoutPanel1.SuspendLayout();
@@ -244,6 +246,8 @@
             // 
             flowLayoutPanel1.Controls.Add(rd1Solid);
             flowLayoutPanel1.Controls.Add(rd2Solid);
+            flowLayoutPanel1.Controls.Add(splitter1);
+            flowLayoutPanel1.Controls.Add(btnCopy);
             flowLayoutPanel1.Location = new Point(503, 3);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
             flowLayoutPanel1.Size = new Size(283, 28);
@@ -270,6 +274,28 @@
             rd2Solid.TabIndex = 1;
             rd2Solid.Text = "KJ";
             rd2Solid.UseVisualStyleBackColor = true;
+            // 
+            // splitter1
+            // 
+            splitter1.Cursor = Cursors.Arrow;
+            splitter1.BackColor = SystemColors.Control;
+            splitter1.Location = new Point(95, 3);
+            splitter1.Name = "splitter1";
+            splitter1.Size = new Size(4, 24);
+            splitter1.TabIndex = 6;
+            splitter1.TabStop = false;
+            // 
+            // btnCopy
+            // 
+            btnCopy.BackgroundImage = (Image)resources.GetObject("btnCopy.BackgroundImage");
+            btnCopy.BackgroundImageLayout = ImageLayout.Zoom;
+            btnCopy.Dock = DockStyle.Right;
+            btnCopy.Location = new Point(105, 3);
+            btnCopy.Name = "btnCopy";
+            btnCopy.Size = new Size(24, 24);
+            btnCopy.TabIndex = 5;
+            btnCopy.UseVisualStyleBackColor = true;
+            btnCopy.Click += btnCopy_Click;
             // 
             // pictureBox1
             // 
@@ -330,5 +356,7 @@
         private RadioButton rd1Solid;
         private RadioButton rd2Solid;
         private PictureBox pictureBox1;
+        private Splitter splitter1;
+        private Button btnCopy;
     }
 }

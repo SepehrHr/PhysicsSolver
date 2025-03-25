@@ -50,6 +50,8 @@
             flowLayoutPanel2 = new FlowLayoutPanel();
             rd1Fliud = new RadioButton();
             rd2Fliud = new RadioButton();
+            splitter1 = new Splitter();
+            btnCopy = new Button();
             label11 = new Label();
             lblWork = new Label();
             pictureBox2 = new PictureBox();
@@ -276,6 +278,8 @@
             // 
             flowLayoutPanel2.Controls.Add(rd1Fliud);
             flowLayoutPanel2.Controls.Add(rd2Fliud);
+            flowLayoutPanel2.Controls.Add(splitter1);
+            flowLayoutPanel2.Controls.Add(btnCopy);
             flowLayoutPanel2.Location = new Point(510, 3);
             flowLayoutPanel2.Name = "flowLayoutPanel2";
             flowLayoutPanel2.Size = new Size(277, 26);
@@ -302,6 +306,27 @@
             rd2Fliud.TabIndex = 0;
             rd2Fliud.Text = "KJ";
             rd2Fliud.UseVisualStyleBackColor = true;
+            // 
+            // splitter1
+            // 
+            splitter1.Cursor = Cursors.Arrow;
+            splitter1.Location = new Point(95, 3);
+            splitter1.Name = "splitter1";
+            splitter1.Size = new Size(4, 24);
+            splitter1.TabIndex = 1;
+            splitter1.TabStop = false;
+            // 
+            // btnCopy
+            // 
+            btnCopy.BackgroundImage = (Image)resources.GetObject("btnCopy.BackgroundImage");
+            btnCopy.BackgroundImageLayout = ImageLayout.Zoom;
+            btnCopy.Dock = DockStyle.Right;
+            btnCopy.Location = new Point(105, 3);
+            btnCopy.Name = "btnCopy";
+            btnCopy.Size = new Size(24, 24);
+            btnCopy.TabIndex = 6;
+            btnCopy.UseVisualStyleBackColor = true;
+            btnCopy.Click += btnCopy_Click;
             // 
             // label11
             // 
@@ -384,5 +409,7 @@
         private RadioButton rd2Fliud;
         private Label label11;
         private Label lblWork;
+        private Splitter splitter1;
+        private Button btnCopy;
     }
 }

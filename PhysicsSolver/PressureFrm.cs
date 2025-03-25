@@ -1,4 +1,5 @@
-﻿using System.Windows.Forms;
+﻿using System.Text.RegularExpressions;
+using System.Windows.Forms;
 
 namespace PhysicsSolver
 {
@@ -176,6 +177,34 @@ namespace PhysicsSolver
                 lblHeight.Text = result + "m";
                 lblPressureFliuds.Text = pressure + "Pa";
                 lblResultFliuds.Text = resultStr;
+            }
+        }
+
+        private void btnCopy_Click(object sender, EventArgs e)
+        {
+            string result = Regex.Replace(lblResultSolid.Text, "[a-zA-Z/²³]", "");
+            try
+            {
+                Clipboard.SetText(result);
+                MessageBox.Show("Copied!", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch
+            {
+                MessageBox.Show("Error copying the result to clipboard.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string result = Regex.Replace(lblResultFliuds.Text, "[a-zA-Z/²³]", "");
+            try
+            {
+                Clipboard.SetText(result);
+                MessageBox.Show("Copied!", "Done", MessageBoxButtons.OK);
+            }
+            catch
+            {
+                MessageBox.Show("Error copying the result to clipboard.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

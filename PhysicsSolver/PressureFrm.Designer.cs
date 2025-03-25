@@ -45,11 +45,14 @@
             numForce = new NumericUpDown();
             cmbAreaUnit = new ComboBox();
             cmbPressureUnitSolid = new ComboBox();
-            lblResultSolid = new Label();
             flowLayoutPanel1 = new FlowLayoutPanel();
             rd1Solid = new RadioButton();
             rd2Solid = new RadioButton();
             rd3Solid = new RadioButton();
+            splitter1 = new Splitter();
+            btnCopy = new Button();
+            button1 = new Button();
+            lblResultSolid = new Label();
             pictureBox1 = new PictureBox();
             tabFluid = new TabPage();
             tableLayoutPanel2 = new TableLayoutPanel();
@@ -73,6 +76,8 @@
             rd1Fliud = new RadioButton();
             rd2Fliud = new RadioButton();
             rd3Fliud = new RadioButton();
+            splitter2 = new Splitter();
+            button2 = new Button();
             label11 = new Label();
             lblPressureFliuds = new Label();
             pictureBox2 = new PictureBox();
@@ -138,8 +143,8 @@
             tableLayoutPanel1.Controls.Add(numForce, 1, 0);
             tableLayoutPanel1.Controls.Add(cmbAreaUnit, 2, 1);
             tableLayoutPanel1.Controls.Add(cmbPressureUnitSolid, 2, 2);
-            tableLayoutPanel1.Controls.Add(lblResultSolid, 4, 1);
             tableLayoutPanel1.Controls.Add(flowLayoutPanel1, 4, 0);
+            tableLayoutPanel1.Controls.Add(lblResultSolid, 4, 1);
             tableLayoutPanel1.Dock = DockStyle.Fill;
             tableLayoutPanel1.Location = new Point(3, 125);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -276,23 +281,14 @@
             cmbPressureUnitSolid.Size = new Size(55, 28);
             cmbPressureUnitSolid.TabIndex = 5;
             // 
-            // lblResultSolid
-            // 
-            lblResultSolid.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            lblResultSolid.AutoSize = true;
-            lblResultSolid.Font = new Font("Segoe UI", 22.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblResultSolid.Location = new Point(500, 34);
-            lblResultSolid.Name = "lblResultSolid";
-            tableLayoutPanel1.SetRowSpan(lblResultSolid, 2);
-            lblResultSolid.Size = new Size(283, 68);
-            lblResultSolid.TabIndex = 9;
-            lblResultSolid.TextAlign = ContentAlignment.MiddleCenter;
-            // 
             // flowLayoutPanel1
             // 
             flowLayoutPanel1.Controls.Add(rd1Solid);
             flowLayoutPanel1.Controls.Add(rd2Solid);
             flowLayoutPanel1.Controls.Add(rd3Solid);
+            flowLayoutPanel1.Controls.Add(splitter1);
+            flowLayoutPanel1.Controls.Add(btnCopy);
+            flowLayoutPanel1.Controls.Add(button1);
             flowLayoutPanel1.Location = new Point(500, 3);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
             flowLayoutPanel1.Size = new Size(283, 28);
@@ -329,6 +325,47 @@
             rd3Solid.TabIndex = 2;
             rd3Solid.Text = "cmHg";
             rd3Solid.UseVisualStyleBackColor = true;
+            // 
+            // splitter1
+            // 
+            splitter1.Location = new Point(226, 3);
+            splitter1.Name = "splitter1";
+            splitter1.Size = new Size(4, 24);
+            splitter1.TabIndex = 5;
+            splitter1.TabStop = false;
+            // 
+            // btnCopy
+            // 
+            btnCopy.BackgroundImage = (Image)resources.GetObject("btnCopy.BackgroundImage");
+            btnCopy.BackgroundImageLayout = ImageLayout.Zoom;
+            btnCopy.Dock = DockStyle.Right;
+            btnCopy.Location = new Point(236, 3);
+            btnCopy.Name = "btnCopy";
+            btnCopy.Size = new Size(24, 24);
+            btnCopy.TabIndex = 4;
+            btnCopy.UseVisualStyleBackColor = true;
+            btnCopy.Click += btnCopy_Click;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(3, 33);
+            button1.Name = "button1";
+            button1.Size = new Size(94, 29);
+            button1.TabIndex = 3;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // lblResultSolid
+            // 
+            lblResultSolid.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            lblResultSolid.AutoSize = true;
+            lblResultSolid.Font = new Font("Segoe UI", 22.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblResultSolid.Location = new Point(500, 34);
+            lblResultSolid.Name = "lblResultSolid";
+            tableLayoutPanel1.SetRowSpan(lblResultSolid, 2);
+            lblResultSolid.Size = new Size(283, 68);
+            lblResultSolid.TabIndex = 9;
+            lblResultSolid.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // pictureBox1
             // 
@@ -556,6 +593,8 @@
             flowLayoutPanel2.Controls.Add(rd1Fliud);
             flowLayoutPanel2.Controls.Add(rd2Fliud);
             flowLayoutPanel2.Controls.Add(rd3Fliud);
+            flowLayoutPanel2.Controls.Add(splitter2);
+            flowLayoutPanel2.Controls.Add(button2);
             flowLayoutPanel2.Location = new Point(506, 3);
             flowLayoutPanel2.Name = "flowLayoutPanel2";
             flowLayoutPanel2.Size = new Size(277, 26);
@@ -592,6 +631,27 @@
             rd3Fliud.TabIndex = 0;
             rd3Fliud.Text = "cmHg";
             rd3Fliud.UseVisualStyleBackColor = true;
+            // 
+            // splitter2
+            // 
+            splitter2.Cursor = Cursors.Arrow;
+            splitter2.Location = new Point(226, 3);
+            splitter2.Name = "splitter2";
+            splitter2.Size = new Size(4, 24);
+            splitter2.TabIndex = 6;
+            splitter2.TabStop = false;
+            // 
+            // button2
+            // 
+            button2.BackgroundImage = (Image)resources.GetObject("button2.BackgroundImage");
+            button2.BackgroundImageLayout = ImageLayout.Zoom;
+            button2.Dock = DockStyle.Right;
+            button2.Location = new Point(236, 3);
+            button2.Name = "button2";
+            button2.Size = new Size(24, 24);
+            button2.TabIndex = 5;
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // label11
             // 
@@ -707,5 +767,10 @@
         private NumericUpDown numPressureFliud;
         private Label lblPressureFliuds;
         private RadioButton rd3Fliud;
+        private Button button1;
+        private Button btnCopy;
+        private Button button2;
+        private Splitter splitter1;
+        private Splitter splitter2;
     }
 }
