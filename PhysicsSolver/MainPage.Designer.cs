@@ -67,7 +67,7 @@
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
             tableLayoutPanel1.Size = new Size(482, 283);
-            tableLayoutPanel1.TabIndex = 2;
+            tableLayoutPanel1.TabIndex = 1;
             // 
             // btnPressure
             // 
@@ -86,7 +86,7 @@
             btnDensity.Location = new Point(3, 73);
             btnDensity.Name = "btnDensity";
             btnDensity.Size = new Size(476, 64);
-            btnDensity.TabIndex = 2;
+            btnDensity.TabIndex = 1;
             btnDensity.Text = "Density";
             btnDensity.UseVisualStyleBackColor = true;
             btnDensity.Click += btnDensity_Click;
@@ -97,7 +97,7 @@
             button3.Location = new Point(3, 213);
             button3.Name = "button3";
             button3.Size = new Size(476, 67);
-            button3.TabIndex = 2;
+            button3.TabIndex = 3;
             button3.Text = "Work";
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
@@ -108,7 +108,7 @@
             btnKinetic.Location = new Point(3, 143);
             btnKinetic.Name = "btnKinetic";
             btnKinetic.Size = new Size(476, 64);
-            btnKinetic.TabIndex = 0;
+            btnKinetic.TabIndex = 2;
             btnKinetic.Text = "Kinetic Energy";
             btnKinetic.UseVisualStyleBackColor = true;
             btnKinetic.Click += btnKinetic_Click;
