@@ -42,5 +42,12 @@
             frmU.Icon = Icon;
             frmU.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var frmHeat = new Heat();
+            frmHeat.Icon = Icon;
+            frmHeat.Show();
+        }
     }
 }
