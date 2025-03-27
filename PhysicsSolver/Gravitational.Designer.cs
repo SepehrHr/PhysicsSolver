@@ -371,7 +371,7 @@
             MinimizeBox = false;
             Name = "Gravitational";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Gravitational";
+            Text = "Physics Solver - Gravitational Potential Energy";
             Load += Gravitational_Load;
             groupBox1.ResumeLayout(false);
             tableLayoutPanel2.ResumeLayout(false);

@@ -20,10 +20,10 @@ namespace PhysicsSolver
 
         private void btnCalculateFliuds_Click(object sender, EventArgs e)
         {
-            decimal mass = cmbMassUnit.SelectedIndex == 0 ? numMass.Value : numMass.Value * 1000;
+            decimal mass = cmbMassUnit.SelectedIndex == 0 ? numMass.Value : numMass.Value / 1000;
             decimal g = numG.Value;
             decimal height = cmbHeightUnit.SelectedIndex == 0 ? numHeight.Value : numHeight.Value / 100;
-            decimal u = cmbUUnit.SelectedIndex == 0 ? numU.Value : numU.Value * 101300;
+            decimal u = cmbUUnit.SelectedIndex == 0 ? numU.Value : numU.Value * 1000;
 
             if (u == 0)
             {
@@ -53,7 +53,7 @@ namespace PhysicsSolver
                 rd1.Visible = true; rd1.Text = "Kg";
                 rd2.Visible = true; rd2.Text = "g";
 
-                var result = g * height / u;
+                var result = u / g / height;
                 string resultStr;
 
                 if (rd2.Checked) resultStr = String.Format("{0:0.00}", result * 1000) + "g";
@@ -75,7 +75,7 @@ namespace PhysicsSolver
                 rd1.Visible = false;
                 rd2.Visible = false;
 
-                var result = mass * height / u;
+                var result = u / height / mass;
                 string resultStr = String.Format("{0:0.00}", result) + "m/s²";
 
                 lblMass.Text = mass + "Kg";
@@ -94,7 +94,7 @@ namespace PhysicsSolver
                 rd1.Visible = true; rd1.Text = "m";
                 rd2.Visible = true; rd2.Text = "cm";
 
-                var result = mass * g / u;
+                var result = u / mass / g;
                 string resultStr;
 
                 if (rd2.Checked) resultStr = String.Format("{0:0.00}", result * 100) + "cm";
