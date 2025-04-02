@@ -40,10 +40,14 @@
             groupBox3 = new GroupBox();
             btnPower = new Button();
             button1 = new Button();
+            flowLayoutPanel1 = new FlowLayoutPanel();
+            btnQuit = new Button();
+            btnAbout = new Button();
             tableLayoutPanel1.SuspendLayout();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             groupBox3.SuspendLayout();
+            flowLayoutPanel1.SuspendLayout();
             SuspendLayout();
             // 
             // lblWelcome
@@ -65,14 +69,15 @@
             tableLayoutPanel1.Controls.Add(groupBox1, 0, 0);
             tableLayoutPanel1.Controls.Add(groupBox2, 0, 2);
             tableLayoutPanel1.Controls.Add(groupBox3, 0, 1);
+            tableLayoutPanel1.Controls.Add(flowLayoutPanel1, 0, 3);
             tableLayoutPanel1.Dock = DockStyle.Bottom;
             tableLayoutPanel1.Location = new Point(0, 45);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
-            tableLayoutPanel1.RowCount = 3;
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 33.33333F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333359F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 33.33334F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel1.RowCount = 4;
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 28.328331F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 28.328331F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 28.328331F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 15.0150156F));
             tableLayoutPanel1.Size = new Size(482, 283);
             tableLayoutPanel1.TabIndex = 1;
             // 
@@ -84,7 +89,7 @@
             groupBox1.Dock = DockStyle.Fill;
             groupBox1.Location = new Point(3, 3);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(476, 88);
+            groupBox1.Size = new Size(476, 74);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "Energy";
@@ -94,7 +99,7 @@
             btnU.Dock = DockStyle.Fill;
             btnU.Location = new Point(135, 23);
             btnU.Name = "btnU";
-            btnU.Size = new Size(198, 62);
+            btnU.Size = new Size(198, 48);
             btnU.TabIndex = 1;
             btnU.Text = "Gravitational Energy (U)";
             btnU.UseVisualStyleBackColor = true;
@@ -105,7 +110,7 @@
             button3.Dock = DockStyle.Left;
             button3.Location = new Point(3, 23);
             button3.Name = "button3";
-            button3.Size = new Size(132, 62);
+            button3.Size = new Size(132, 48);
             button3.TabIndex = 0;
             button3.Text = "Work";
             button3.UseVisualStyleBackColor = true;
@@ -116,7 +121,7 @@
             btnKinetic.Dock = DockStyle.Right;
             btnKinetic.Location = new Point(333, 23);
             btnKinetic.Name = "btnKinetic";
-            btnKinetic.Size = new Size(140, 62);
+            btnKinetic.Size = new Size(140, 48);
             btnKinetic.TabIndex = 2;
             btnKinetic.Text = "Kinetic Energy";
             btnKinetic.UseVisualStyleBackColor = true;
@@ -127,9 +132,9 @@
             groupBox2.Controls.Add(btnPressure);
             groupBox2.Controls.Add(btnDensity);
             groupBox2.Dock = DockStyle.Fill;
-            groupBox2.Location = new Point(3, 191);
+            groupBox2.Location = new Point(3, 163);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(476, 89);
+            groupBox2.Size = new Size(476, 74);
             groupBox2.TabIndex = 2;
             groupBox2.TabStop = false;
             groupBox2.Text = "Other";
@@ -139,7 +144,7 @@
             btnPressure.Dock = DockStyle.Right;
             btnPressure.Location = new Point(239, 23);
             btnPressure.Name = "btnPressure";
-            btnPressure.Size = new Size(234, 63);
+            btnPressure.Size = new Size(234, 48);
             btnPressure.TabIndex = 1;
             btnPressure.Text = "Pressure";
             btnPressure.UseVisualStyleBackColor = true;
@@ -150,7 +155,7 @@
             btnDensity.Dock = DockStyle.Left;
             btnDensity.Location = new Point(3, 23);
             btnDensity.Name = "btnDensity";
-            btnDensity.Size = new Size(234, 63);
+            btnDensity.Size = new Size(234, 48);
             btnDensity.TabIndex = 0;
             btnDensity.Text = "Density";
             btnDensity.UseVisualStyleBackColor = true;
@@ -161,9 +166,9 @@
             groupBox3.Controls.Add(btnPower);
             groupBox3.Controls.Add(button1);
             groupBox3.Dock = DockStyle.Fill;
-            groupBox3.Location = new Point(3, 97);
+            groupBox3.Location = new Point(3, 83);
             groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(476, 88);
+            groupBox3.Size = new Size(476, 74);
             groupBox3.TabIndex = 1;
             groupBox3.TabStop = false;
             groupBox3.Text = "Heat";
@@ -173,7 +178,7 @@
             btnPower.Dock = DockStyle.Right;
             btnPower.Location = new Point(239, 23);
             btnPower.Name = "btnPower";
-            btnPower.Size = new Size(234, 62);
+            btnPower.Size = new Size(234, 48);
             btnPower.TabIndex = 1;
             btnPower.Text = "Power (Heat)";
             btnPower.UseVisualStyleBackColor = true;
@@ -184,11 +189,41 @@
             button1.Dock = DockStyle.Left;
             button1.Location = new Point(3, 23);
             button1.Name = "button1";
-            button1.Size = new Size(234, 62);
+            button1.Size = new Size(234, 48);
             button1.TabIndex = 0;
             button1.Text = "Heat Energy";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
+            // 
+            // flowLayoutPanel1
+            // 
+            flowLayoutPanel1.Controls.Add(btnQuit);
+            flowLayoutPanel1.Controls.Add(btnAbout);
+            flowLayoutPanel1.Dock = DockStyle.Fill;
+            flowLayoutPanel1.Location = new Point(3, 243);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
+            flowLayoutPanel1.Size = new Size(476, 37);
+            flowLayoutPanel1.TabIndex = 3;
+            // 
+            // btnQuit
+            // 
+            btnQuit.Location = new Point(3, 3);
+            btnQuit.Name = "btnQuit";
+            btnQuit.Size = new Size(94, 29);
+            btnQuit.TabIndex = 0;
+            btnQuit.Text = "Quit";
+            btnQuit.UseVisualStyleBackColor = true;
+            btnQuit.Click += btnQuit_Click;
+            // 
+            // btnAbout
+            // 
+            btnAbout.Location = new Point(103, 3);
+            btnAbout.Name = "btnAbout";
+            btnAbout.Size = new Size(94, 29);
+            btnAbout.TabIndex = 1;
+            btnAbout.Text = "About";
+            btnAbout.UseVisualStyleBackColor = true;
+            btnAbout.Click += btnAbout_Click;
             // 
             // MainPage
             // 
@@ -205,6 +240,7 @@
             groupBox1.ResumeLayout(false);
             groupBox2.ResumeLayout(false);
             groupBox3.ResumeLayout(false);
+            flowLayoutPanel1.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -222,5 +258,8 @@
         private GroupBox groupBox3;
         private Button btnPower;
         private Button button1;
+        private FlowLayoutPanel flowLayoutPanel1;
+        private Button btnQuit;
+        private Button btnAbout;
     }
 }

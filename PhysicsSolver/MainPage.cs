@@ -56,5 +56,17 @@
             frmPower.Icon = Icon;
             frmPower.Show();
         }
+
+        private void btnQuit_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void btnAbout_Click(object sender, EventArgs e)
+        {
+            var frmAbout = new About();
+            frmAbout.Icon = Icon;
+            frmAbout.Show();
+        }
     }
 }
