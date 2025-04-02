@@ -85,7 +85,7 @@
             groupBox1.Location = new Point(3, 3);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(476, 88);
-            groupBox1.TabIndex = 4;
+            groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "Energy";
             // 
@@ -95,7 +95,7 @@
             btnU.Location = new Point(135, 23);
             btnU.Name = "btnU";
             btnU.Size = new Size(198, 62);
-            btnU.TabIndex = 4;
+            btnU.TabIndex = 1;
             btnU.Text = "Gravitational Energy (U)";
             btnU.UseVisualStyleBackColor = true;
             btnU.Click += btnU_Click;
@@ -106,7 +106,7 @@
             button3.Location = new Point(3, 23);
             button3.Name = "button3";
             button3.Size = new Size(132, 62);
-            button3.TabIndex = 3;
+            button3.TabIndex = 0;
             button3.Text = "Work";
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
@@ -130,7 +130,7 @@
             groupBox2.Location = new Point(3, 191);
             groupBox2.Name = "groupBox2";
             groupBox2.Size = new Size(476, 89);
-            groupBox2.TabIndex = 5;
+            groupBox2.TabIndex = 2;
             groupBox2.TabStop = false;
             groupBox2.Text = "Other";
             // 
@@ -140,7 +140,7 @@
             btnPressure.Location = new Point(239, 23);
             btnPressure.Name = "btnPressure";
             btnPressure.Size = new Size(234, 63);
-            btnPressure.TabIndex = 0;
+            btnPressure.TabIndex = 1;
             btnPressure.Text = "Pressure";
             btnPressure.UseVisualStyleBackColor = true;
             btnPressure.Click += btnPressure_Click;
@@ -151,7 +151,7 @@
             btnDensity.Location = new Point(3, 23);
             btnDensity.Name = "btnDensity";
             btnDensity.Size = new Size(234, 63);
-            btnDensity.TabIndex = 1;
+            btnDensity.TabIndex = 0;
             btnDensity.Text = "Density";
             btnDensity.UseVisualStyleBackColor = true;
             btnDensity.Click += btnDensity_Click;
@@ -164,7 +164,7 @@
             groupBox3.Location = new Point(3, 97);
             groupBox3.Name = "groupBox3";
             groupBox3.Size = new Size(476, 88);
-            groupBox3.TabIndex = 6;
+            groupBox3.TabIndex = 1;
             groupBox3.TabStop = false;
             groupBox3.Text = "Heat";
             // 
