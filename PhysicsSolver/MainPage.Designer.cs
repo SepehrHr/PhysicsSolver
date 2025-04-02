@@ -38,7 +38,7 @@
             btnPressure = new Button();
             btnDensity = new Button();
             groupBox3 = new GroupBox();
-            button2 = new Button();
+            btnPower = new Button();
             button1 = new Button();
             tableLayoutPanel1.SuspendLayout();
             groupBox1.SuspendLayout();
@@ -158,7 +158,7 @@
             // 
             // groupBox3
             // 
-            groupBox3.Controls.Add(button2);
+            groupBox3.Controls.Add(btnPower);
             groupBox3.Controls.Add(button1);
             groupBox3.Dock = DockStyle.Fill;
             groupBox3.Location = new Point(3, 97);
@@ -168,15 +168,16 @@
             groupBox3.TabStop = false;
             groupBox3.Text = "Heat";
             // 
-            // button2
+            // btnPower
             // 
-            button2.Dock = DockStyle.Right;
-            button2.Location = new Point(239, 23);
-            button2.Name = "button2";
-            button2.Size = new Size(234, 62);
-            button2.TabIndex = 1;
-            button2.Text = "Power (Heat)";
-            button2.UseVisualStyleBackColor = true;
+            btnPower.Dock = DockStyle.Right;
+            btnPower.Location = new Point(239, 23);
+            btnPower.Name = "btnPower";
+            btnPower.Size = new Size(234, 62);
+            btnPower.TabIndex = 1;
+            btnPower.Text = "Power (Heat)";
+            btnPower.UseVisualStyleBackColor = true;
+            btnPower.Click += btnPower_Click;
             // 
             // button1
             // 
@@ -219,7 +220,7 @@
         private Button btnU;
         private GroupBox groupBox2;
         private GroupBox groupBox3;
-        private Button button2;
+        private Button btnPower;
         private Button button1;
     }
 }

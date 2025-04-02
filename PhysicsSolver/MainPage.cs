@@ -49,5 +49,12 @@
             frmHeat.Icon = Icon;
             frmHeat.Show();
         }
+
+        private void btnPower_Click(object sender, EventArgs e)
+        {
+            var frmPower = new Power();
+            frmPower.Icon = Icon;
+            frmPower.Show();
+        }
     }
 }
