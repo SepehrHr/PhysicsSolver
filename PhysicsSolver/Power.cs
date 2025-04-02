@@ -25,8 +25,8 @@ namespace PhysicsSolver
             decimal power = cmbPowerUnit.SelectedIndex < 2 ? numPower.Value : numPower.Value * 1000;
             if (power == 0)
             {
-                rd1Solid.Visible = true; rd1Solid.Text = "J (SI Unit)";
-                rd2Solid.Visible = true; rd2Solid.Text = "KJ";
+                rd1Solid.Visible = true; rd1Solid.Text = "Watt (SI Unit)";
+                rd2Solid.Visible = true; rd2Solid.Text = "hp";
                 if (time == 0)
                 {
                     MessageBox.Show("Time cannot be 0!", "Error", MessageBoxButtons.OK, icon: MessageBoxIcon.Warning);
