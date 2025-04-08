@@ -34,23 +34,25 @@
             label3 = new Label();
             linklblGithub = new LinkLabel();
             pictureBox1 = new PictureBox();
+            label4 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(95, 9);
+            label1.Font = new Font("Segoe UI Semibold", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.FromArgb(253, 132, 105);
+            label1.Location = new Point(77, 13);
             label1.Name = "label1";
-            label1.Size = new Size(288, 54);
+            label1.Size = new Size(275, 54);
             label1.TabIndex = 0;
             label1.Text = "Physics Solver";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(12, 77);
+            label2.Location = new Point(12, 99);
             label2.Name = "label2";
             label2.Size = new Size(389, 20);
             label2.TabIndex = 1;
@@ -59,16 +61,17 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(12, 97);
+            label3.Location = new Point(12, 119);
             label3.Name = "label3";
-            label3.Size = new Size(94, 20);
+            label3.Size = new Size(91, 20);
             label3.TabIndex = 2;
-            label3.Text = "Version: 1.2.4";
+            label3.Text = "Version 1.2.5";
             // 
             // linklblGithub
             // 
             linklblGithub.AutoSize = true;
             linklblGithub.LinkArea = new LinkArea(33, 18);
+            linklblGithub.LinkColor = Color.FromArgb(13, 110, 253);
             linklblGithub.Location = new Point(12, 202);
             linklblGithub.Name = "linklblGithub";
             linklblGithub.Size = new Size(373, 25);
@@ -81,18 +84,27 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(30, 12);
+            pictureBox1.Location = new Point(12, 9);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(59, 62);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 4;
             pictureBox1.TabStop = false;
             // 
+            // label4
+            // 
+            label4.BorderStyle = BorderStyle.FixedSingle;
+            label4.Location = new Point(12, 81);
+            label4.Name = "label4";
+            label4.Size = new Size(462, 1);
+            label4.TabIndex = 5;
+            // 
             // About
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(486, 231);
+            Controls.Add(label4);
             Controls.Add(pictureBox1);
             Controls.Add(linklblGithub);
             Controls.Add(label3);
@@ -116,5 +128,6 @@
         private Label label3;
         private LinkLabel linklblGithub;
         private PictureBox pictureBox1;
+        private Label label4;
     }
 }
