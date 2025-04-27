@@ -53,7 +53,7 @@ namespace PhysicsSolver
                 rd1.Visible = true; rd1.Text = "Kg";
                 rd2.Visible = true; rd2.Text = "g";
 
-                var result = q / c / deltaT;
+                var result = q / (c * deltaT);
                 string resultStr;
 
                 if (rd2.Checked) resultStr = String.Format("{0:0.00}", result * 1000) + "g";
@@ -75,7 +75,7 @@ namespace PhysicsSolver
                 rd1.Visible = false;
                 rd2.Visible = false;
 
-                var result = q / mass / deltaT;
+                var result = q / (mass * deltaT);
                 string resultStr = String.Format("{0:0.00}", result) + "J/Kg∙K";
 
                 lblMass.Text = mass + "Kg";
@@ -94,7 +94,7 @@ namespace PhysicsSolver
                 rd1.Visible = true; rd1.Text = "°C";
                 rd2.Visible = true; rd2.Text = "°F";
 
-                var result = q / mass / c;
+                var result = q / (mass * c);
                 string resultStr;
 
                 if (rd2.Checked) resultStr = String.Format("{0:0.00}", result * (decimal)1.8) + "°F";

@@ -20,9 +20,9 @@ namespace PhysicsSolver
 
         private void btnCalculate_Click(object sender, EventArgs e)
         {
-            decimal q = cmbQUnit.SelectedIndex == 0 ? numQ.Value : numQ.Value / 1000;
-            decimal time; if (cmbTimeUnit.SelectedIndex == 1) time = numTime.Value / 1000; else time = numTime.Value / 1000000;
-            decimal power = cmbPowerUnit.SelectedIndex < 2 ? numPower.Value : numPower.Value * 1000;
+            decimal q = cmbQUnit.SelectedIndex == 0 ? numQ.Value : numQ.Value * 1000;
+            decimal time = cmbTimeUnit.SelectedIndex == 0 ? numTime.Value : numTime.Value * 60;
+            decimal power = cmbPowerUnit.SelectedIndex == 0 ? numPower.Value : numPower.Value * 745;
             if (power == 0)
             {
                 rd1Solid.Visible = true; rd1Solid.Text = "Watt (SI Unit)";
@@ -39,7 +39,7 @@ namespace PhysicsSolver
                 else resultStr = String.Format("{0:0.00}", result) + "Watt";
 
                 lblPower.Text = resultStr;
-                lblQ.Text = $"{power}J";
+                lblQ.Text = $"{q}J";
                 lblTime.Text = $"{time}s";
                 lblResult.Text = resultStr;
             }

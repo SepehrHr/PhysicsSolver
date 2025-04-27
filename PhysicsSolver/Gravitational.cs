@@ -53,7 +53,7 @@ namespace PhysicsSolver
                 rd1.Visible = true; rd1.Text = "Kg";
                 rd2.Visible = true; rd2.Text = "g";
 
-                var result = u / g / height;
+                var result = u / (g * height);
                 string resultStr;
 
                 if (rd2.Checked) resultStr = String.Format("{0:0.00}", result * 1000) + "g";
@@ -75,7 +75,7 @@ namespace PhysicsSolver
                 rd1.Visible = false;
                 rd2.Visible = false;
 
-                var result = u / height / mass;
+                var result = u / (height * mass);
                 string resultStr = String.Format("{0:0.00}", result) + "m/s²";
 
                 lblMass.Text = mass + "Kg";
@@ -94,7 +94,7 @@ namespace PhysicsSolver
                 rd1.Visible = true; rd1.Text = "m";
                 rd2.Visible = true; rd2.Text = "cm";
 
-                var result = u / mass / g;
+                var result = u / (mass * g);
                 string resultStr;
 
                 if (rd2.Checked) resultStr = String.Format("{0:0.00}", result * 100) + "cm";

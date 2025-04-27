@@ -28,6 +28,7 @@ namespace PhysicsSolver
             decimal force = numForce.Value;
             decimal distance = cmbDistanceUnit.SelectedIndex == 0 ? numDistance.Value : numDistance.Value / 100;
             decimal cosAlpha = (decimal)Math.Cos((double)numAlpha.Value * (Math.PI / 180));
+            decimal Alpha = numAlpha.Value;
             decimal work = cmbWorkUnit.SelectedIndex == 0 ? numWork.Value : numWork.Value * 1000;
 
             if (work == 0)
@@ -58,7 +59,7 @@ namespace PhysicsSolver
                 rd1Fliud.Visible = false;
                 rd2Fliud.Visible = false;
 
-                var result = distance * cosAlpha / work;
+                var result = work / (distance * cosAlpha);
                 string resultStr;
 
                 resultStr = String.Format("{0:0.00}", result) + "N";
@@ -79,7 +80,7 @@ namespace PhysicsSolver
                 rd1Fliud.Visible = true; rd1Fliud.Text = "m";
                 rd2Fliud.Visible = true; rd2Fliud.Text = "cm";
 
-                var result = force * cosAlpha / work;
+                var result = work / (force * cosAlpha);
                 string resultStr;
                 if (rd2Fliud.Checked) resultStr = String.Format("{0:0.00}", result * 100) + "cm";
                 else resultStr = String.Format("{0:0.00}", result) + "m";
@@ -90,7 +91,7 @@ namespace PhysicsSolver
                 lblWork.Text = work + "J";
                 lblResult.Text = resultStr;
             }
-            else if (cosAlpha == 0)
+            else if (Alpha == 0)
             {
                 if (work == 0)
                 {
@@ -100,8 +101,8 @@ namespace PhysicsSolver
                 rd1Fliud.Visible = false;
                 rd2Fliud.Visible = false;
 
-                var result = force * distance / work;
-                string resultStr = "Cosα: " + String.Format("{0:0.00}", result * 100);
+                var result = work / (force * distance);
+                string resultStr = "α: " + String.Format("{0:0.00}", Math.Acos((double)result) * 180 / Math.PI) + "°";
 
                 lblForce.Text = result + "N";
                 lblDistance.Text = distance + "m";

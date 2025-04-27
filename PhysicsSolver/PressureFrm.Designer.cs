@@ -51,7 +51,6 @@
             rd3Solid = new RadioButton();
             splitter1 = new Splitter();
             btnCopy = new Button();
-            button1 = new Button();
             lblResultSolid = new Label();
             pictureBox1 = new PictureBox();
             tabFluid = new TabPage();
@@ -291,7 +290,6 @@
             flowLayoutPanel1.Controls.Add(rd3Solid);
             flowLayoutPanel1.Controls.Add(splitter1);
             flowLayoutPanel1.Controls.Add(btnCopy);
-            flowLayoutPanel1.Controls.Add(button1);
             flowLayoutPanel1.Location = new Point(500, 3);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
             flowLayoutPanel1.Size = new Size(283, 28);
@@ -348,15 +346,6 @@
             btnCopy.TabIndex = 4;
             btnCopy.UseVisualStyleBackColor = true;
             btnCopy.Click += btnCopy_Click;
-            // 
-            // button1
-            // 
-            button1.Location = new Point(3, 33);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 3;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
             // 
             // lblResultSolid
             // 
@@ -773,7 +762,6 @@
         private NumericUpDown numPressureFliud;
         private Label lblPressureFliuds;
         private RadioButton rd3Fliud;
-        private Button button1;
         private Button btnCopy;
         private Button button2;
         private Splitter splitter1;

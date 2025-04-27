@@ -42,11 +42,13 @@ namespace PhysicsSolver
                 rd1Solid.Visible = false;
                 rd2Solid.Visible = false;
                 rd3Solid.Visible = false;
-                var result = $"{pressure * area}N";
+                var result = pressure * area;
+                var resultStr = String.Format("{0:0.00}", result) + "N";
+
                 lblPressureSolidResult.Text = $"{pressure}Pa";
-                lblForceResult.Text = result;
+                lblForceResult.Text = resultStr;
                 lblAreaResult.Text = $"{area}m²";
-                lblResultSolid.Text = result;
+                lblResultSolid.Text = resultStr;
             }
             else if (area == 0)
             {
@@ -123,7 +125,7 @@ namespace PhysicsSolver
                 rd2Fliud.Visible = true; rd2Fliud.Text = "g/cm²";
                 rd3Fliud.Visible = false;
 
-                var result = pressure / g / height;
+                var result = pressure / (g * height);
                 string resultStr;
 
                 if (rd2Fliud.Checked) resultStr = String.Format("{0:0.00}", result / 1000) + "g/cm²";
@@ -146,7 +148,7 @@ namespace PhysicsSolver
                 rd2Fliud.Visible = false;
                 rd3Fliud.Visible = false;
 
-                var result = pressure / rho / height;
+                var result = pressure / (rho * height);
                 string resultStr = String.Format("{0:0.00}", result) + "m/s²";
 
                 lblRho.Text = rho + "Kg/m³";
@@ -166,7 +168,7 @@ namespace PhysicsSolver
                 rd2Fliud.Visible = true; rd2Fliud.Text = "cm";
                 rd3Fliud.Visible = false;
 
-                var result = pressure / rho / g;
+                var result = pressure / (rho * g);
                 string resultStr;
 
                 if (rd2Fliud.Checked) resultStr = String.Format("{0:0.00}", result * 100) + "cm";

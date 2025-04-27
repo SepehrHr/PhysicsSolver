@@ -28,7 +28,7 @@ namespace PhysicsSolver
         private void btnCalculate_Click(object sender, EventArgs e)
         {
             decimal mass = cmbMassUnit.SelectedIndex == 0 ? numMass.Value : numMass.Value / 1000;
-            decimal volume; if (cmbVolumeUnit.SelectedIndex == 1) volume = numVolume.Value / 1000; else volume = numVolume.Value / 1000000;
+            decimal volume; if (cmbVolumeUnit.SelectedIndex == 0) volume = numVolume.Value; else if (cmbVolumeUnit.SelectedIndex == 1) volume = numVolume.Value / 1000; else volume = numVolume.Value / 1000000;
             decimal rho = cmbRhoUnit.SelectedIndex < 2 ? numRho.Value : numRho.Value * 1000;
             if (rho == 0)
             {

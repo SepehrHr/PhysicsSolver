@@ -7,6 +7,22 @@
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
     <ApplicationIcon>PhysicsSolver.ico</ApplicationIcon>
+    <AssemblyVersion>1.2.6.0</AssemblyVersion>
+    <RepositoryUrl>https://github.com/SepehrHr/PhysicsSolver</RepositoryUrl>
+    <FileVersion>1.2.6.0</FileVersion>
+    <Product>Physics Solver</Product>
+    <Company>Sepehr Hekmat Rad</Company>
+    <Authors>Sepehr Hekmat Rad</Authors>
+    <Version>1.2.6</Version>
+    <SignAssembly>False</SignAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>none</DebugType>
   </PropertyGroup>
 
   <ItemGroup>
