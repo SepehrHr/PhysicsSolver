@@ -67,10 +67,11 @@
             groupBox1.Dock = DockStyle.Fill;
             groupBox1.Location = new Point(0, 0);
             groupBox1.Name = "groupBox1";
+            groupBox1.RightToLeft = RightToLeft.No;
             groupBox1.Size = new Size(800, 297);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
-            groupBox1.Text = "Calculate Density";
+            groupBox1.Text = "محاسبه چگالی";
             // 
             // tableLayoutPanel1
             // 
@@ -143,27 +144,28 @@
             label2.AutoSize = true;
             label2.Location = new Point(3, 0);
             label2.Name = "label2";
-            label2.Size = new Size(45, 20);
+            label2.RightToLeft = RightToLeft.No;
+            label2.Size = new Size(62, 20);
             label2.TabIndex = 0;
-            label2.Text = "mass:";
+            label2.Text = "جرم (m):";
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Location = new Point(3, 37);
             label1.Name = "label1";
-            label1.Size = new Size(62, 20);
+            label1.Size = new Size(58, 20);
             label1.TabIndex = 0;
-            label1.Text = "Volume:";
+            label1.Text = "جرم (V):";
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Location = new Point(3, 74);
             label3.Name = "label3";
-            label3.Size = new Size(84, 20);
+            label3.Size = new Size(74, 20);
             label3.TabIndex = 0;
-            label3.Text = "ρ (Density):";
+            label3.Text = "چگالی (ρ):";
             // 
             // btnCalculate
             // 
@@ -174,7 +176,7 @@
             btnCalculate.Name = "btnCalculate";
             btnCalculate.Size = new Size(634, 32);
             btnCalculate.TabIndex = 7;
-            btnCalculate.Text = "Calculate";
+            btnCalculate.Text = "محاسبه";
             btnCalculate.UseVisualStyleBackColor = true;
             btnCalculate.Click += btnCalculate_Click;
             // 
@@ -262,16 +264,16 @@
             rd1Solid.Checked = true;
             rd1Solid.Location = new Point(3, 3);
             rd1Solid.Name = "rd1Solid";
-            rd1Solid.Size = new Size(130, 24);
+            rd1Solid.Size = new Size(132, 24);
             rd1Solid.TabIndex = 0;
             rd1Solid.TabStop = true;
-            rd1Solid.Text = "Kg/m³ (SI Unit)";
+            rd1Solid.Text = "Kg/m³ (SI واحد)";
             rd1Solid.UseVisualStyleBackColor = true;
             // 
             // rd2Solid
             // 
             rd2Solid.AutoSize = true;
-            rd2Solid.Location = new Point(139, 3);
+            rd2Solid.Location = new Point(141, 3);
             rd2Solid.Name = "rd2Solid";
             rd2Solid.Size = new Size(52, 24);
             rd2Solid.TabIndex = 1;
@@ -281,7 +283,7 @@
             // rd3Solid
             // 
             rd3Solid.AutoSize = true;
-            rd3Solid.Location = new Point(197, 3);
+            rd3Solid.Location = new Point(199, 3);
             rd3Solid.Name = "rd3Solid";
             rd3Solid.Size = new Size(71, 24);
             rd3Solid.TabIndex = 2;
@@ -293,9 +295,9 @@
             btnCopy.BackgroundImage = (Image)resources.GetObject("btnCopy.BackgroundImage");
             btnCopy.BackgroundImageLayout = ImageLayout.Zoom;
             btnCopy.Dock = DockStyle.Right;
-            btnCopy.Location = new Point(274, 3);
+            btnCopy.Location = new Point(3, 33);
             btnCopy.Name = "btnCopy";
-            btnCopy.Size = new Size(24, 24);
+            btnCopy.Size = new Size(24, 0);
             btnCopy.TabIndex = 6;
             btnCopy.UseVisualStyleBackColor = true;
             btnCopy.Click += btnCopy_Click;
@@ -323,7 +325,7 @@
             MinimizeBox = false;
             Name = "Density";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Physics Solver - Density";
+            Text = "Physics Solver - چگالی";
             Load += Density_Load;
             groupBox1.ResumeLayout(false);
             tableLayoutPanel1.ResumeLayout(false);

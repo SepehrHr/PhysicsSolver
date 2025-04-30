@@ -25,7 +25,7 @@ namespace PhysicsSolver
             decimal power = cmbPowerUnit.SelectedIndex == 0 ? numPower.Value : numPower.Value * 745;
             if (power == 0)
             {
-                rd1Solid.Visible = true; rd1Solid.Text = "Watt (SI Unit)";
+                rd1Solid.Visible = true; rd1Solid.Text = "Watt (SI واحد)";
                 rd2Solid.Visible = true; rd2Solid.Text = "hp";
                 if (time == 0)
                 {

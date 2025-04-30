@@ -17,7 +17,7 @@ namespace PhysicsSolver
             decimal force = numForce.Value;
             if (pressure == 0)
             {
-                rd1Solid.Visible = true; rd1Solid.Text = "SI Unit";
+                rd1Solid.Visible = true; rd1Solid.Text = "SI واحد";
                 rd2Solid.Visible = true; rd2Solid.Text = "atm";
                 rd3Solid.Visible = true; rd3Solid.Text = "cmHg";
                 if (area == 0)
@@ -96,7 +96,7 @@ namespace PhysicsSolver
 
             if (pressure == 0)
             {
-                rd1Fliud.Visible = true; rd1Fliud.Text = "SI Unit";
+                rd1Fliud.Visible = true; rd1Fliud.Text = "SI واحد";
                 rd2Fliud.Visible = true; rd2Fliud.Text = "atm";
                 rd3Fliud.Visible = true; rd3Fliud.Text = "cmHg";
 

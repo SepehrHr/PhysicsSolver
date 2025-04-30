@@ -75,7 +75,7 @@
             groupBox1.Size = new Size(800, 284);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
-            groupBox1.Text = "Calculate Work";
+            groupBox1.Text = "محاسبه کار";
             // 
             // tableLayoutPanel2
             // 
@@ -175,27 +175,27 @@
             label4.AutoSize = true;
             label4.Location = new Point(3, 0);
             label4.Name = "label4";
-            label4.Size = new Size(48, 20);
+            label4.Size = new Size(56, 20);
             label4.TabIndex = 0;
-            label4.Text = "Force:";
+            label4.Text = "نیرو (F):";
             // 
             // label5
             // 
             label5.AutoSize = true;
             label5.Location = new Point(3, 33);
             label5.Name = "label5";
-            label5.Size = new Size(67, 20);
+            label5.Size = new Size(84, 20);
             label5.TabIndex = 0;
-            label5.Text = "distance:";
+            label5.Text = "جابجایی (d):";
             // 
             // label6
             // 
             label6.AutoSize = true;
             label6.Location = new Point(3, 66);
             label6.Name = "label6";
-            label6.Size = new Size(114, 20);
+            label6.Size = new Size(93, 20);
             label6.TabIndex = 0;
-            label6.Text = "α (Force Angle):";
+            label6.Text = "زاویه نیرو (α):";
             // 
             // btnCalculateFliuds
             // 
@@ -206,7 +206,7 @@
             btnCalculateFliuds.Name = "btnCalculateFliuds";
             btnCalculateFliuds.Size = new Size(634, 31);
             btnCalculateFliuds.TabIndex = 8;
-            btnCalculateFliuds.Text = "Calculate";
+            btnCalculateFliuds.Text = "محاسبه";
             btnCalculateFliuds.UseVisualStyleBackColor = true;
             btnCalculateFliuds.Click += btnCalculateFliuds_Click;
             // 
@@ -336,9 +336,9 @@
             label11.AutoSize = true;
             label11.Location = new Point(3, 99);
             label11.Name = "label11";
-            label11.Size = new Size(46, 20);
+            label11.Size = new Size(58, 20);
             label11.TabIndex = 0;
-            label11.Text = "Work:";
+            label11.Text = "کار (W):";
             // 
             // lblWork
             // 
@@ -371,7 +371,7 @@
             MinimizeBox = false;
             Name = "Work";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Physics Solver - Work";
+            Text = "Physics Solver - کار";
             Load += Work_Load;
             groupBox1.ResumeLayout(false);
             tableLayoutPanel2.ResumeLayout(false);

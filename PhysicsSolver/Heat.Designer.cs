@@ -75,7 +75,7 @@
             groupBox1.Size = new Size(800, 297);
             groupBox1.TabIndex = 1;
             groupBox1.TabStop = false;
-            groupBox1.Text = "Calculate Gravitational Energy";
+            groupBox1.Text = "محاسبه انرژی گرمایی";
             // 
             // tableLayoutPanel2
             // 
@@ -174,27 +174,27 @@
             label4.AutoSize = true;
             label4.Location = new Point(3, 0);
             label4.Name = "label4";
-            label4.Size = new Size(45, 20);
+            label4.Size = new Size(62, 20);
             label4.TabIndex = 0;
-            label4.Text = "mass:";
+            label4.Text = "جرم (m):";
             // 
             // label5
             // 
             label5.AutoSize = true;
             label5.Location = new Point(3, 35);
             label5.Name = "label5";
-            label5.Size = new Size(121, 20);
+            label5.Size = new Size(101, 20);
             label5.TabIndex = 0;
-            label5.Text = "c (Specific Heat):";
+            label5.Text = "گرمای ویژه (c):";
             // 
             // label6
             // 
             label6.AutoSize = true;
             label6.Location = new Point(3, 70);
             label6.Name = "label6";
-            label6.Size = new Size(182, 20);
+            label6.Size = new Size(99, 20);
             label6.TabIndex = 0;
-            label6.Text = "∆T (Temperature Change):";
+            label6.Text = "تغییر دما (∆T):";
             // 
             // btnCalculateFliuds
             // 
@@ -205,7 +205,7 @@
             btnCalculateFliuds.Name = "btnCalculateFliuds";
             btnCalculateFliuds.Size = new Size(634, 31);
             btnCalculateFliuds.TabIndex = 8;
-            btnCalculateFliuds.Text = "Calculate";
+            btnCalculateFliuds.Text = "محاسبه";
             btnCalculateFliuds.UseVisualStyleBackColor = true;
             btnCalculateFliuds.Click += btnCalculateFliuds_Click;
             // 
@@ -294,16 +294,16 @@
             rd1.Checked = true;
             rd1.Location = new Point(3, 3);
             rd1.Name = "rd1";
-            rd1.Size = new Size(98, 24);
+            rd1.Size = new Size(94, 24);
             rd1.TabIndex = 0;
             rd1.TabStop = true;
-            rd1.Text = "J (SI Units)";
+            rd1.Text = "J (SI واحد)";
             rd1.UseVisualStyleBackColor = true;
             // 
             // rd2
             // 
             rd2.AutoSize = true;
-            rd2.Location = new Point(107, 3);
+            rd2.Location = new Point(103, 3);
             rd2.Name = "rd2";
             rd2.Size = new Size(45, 24);
             rd2.TabIndex = 0;
@@ -312,7 +312,7 @@
             // 
             // splitter2
             // 
-            splitter2.Location = new Point(158, 3);
+            splitter2.Location = new Point(154, 3);
             splitter2.Name = "splitter2";
             splitter2.Size = new Size(4, 24);
             splitter2.TabIndex = 6;
@@ -323,7 +323,7 @@
             btnCopy.BackgroundImage = (Image)resources.GetObject("btnCopy.BackgroundImage");
             btnCopy.BackgroundImageLayout = ImageLayout.Zoom;
             btnCopy.Dock = DockStyle.Right;
-            btnCopy.Location = new Point(168, 3);
+            btnCopy.Location = new Point(164, 3);
             btnCopy.Name = "btnCopy";
             btnCopy.Size = new Size(24, 24);
             btnCopy.TabIndex = 5;
@@ -335,9 +335,9 @@
             label11.AutoSize = true;
             label11.Location = new Point(3, 105);
             label11.Name = "label11";
-            label11.Size = new Size(69, 20);
+            label11.Size = new Size(116, 20);
             label11.TabIndex = 0;
-            label11.Text = "Q (Heat):";
+            label11.Text = "انرژی گرمایی (Q):";
             // 
             // lblQ
             // 
@@ -369,7 +369,7 @@
             MinimizeBox = false;
             Name = "Heat";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Physics Solver - Heat";
+            Text = "Physics Solver - انرژی گرمایی";
             Load += Heat_Load;
             groupBox1.ResumeLayout(false);
             tableLayoutPanel2.ResumeLayout(false);

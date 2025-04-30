@@ -43,7 +43,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI Semibold", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.FromArgb(253, 132, 105);
-            label1.Location = new Point(77, 13);
+            label1.Location = new Point(134, 17);
             label1.Name = "label1";
             label1.Size = new Size(275, 54);
             label1.TabIndex = 0;
@@ -52,39 +52,41 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(12, 99);
+            label2.Location = new Point(38, 99);
             label2.Name = "label2";
-            label2.Size = new Size(389, 20);
+            label2.RightToLeft = RightToLeft.Yes;
+            label2.Size = new Size(436, 20);
             label2.TabIndex = 1;
-            label2.Text = "Physics Solver is a software to calculate physics problems.";
+            label2.Text = "Physics Solver نرم افزاری برای حل مسائل فیزیک طبق فرمول آنهاست.";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(12, 119);
+            label3.Location = new Point(393, 119);
             label3.Name = "label3";
-            label3.Size = new Size(91, 20);
+            label3.Size = new Size(81, 20);
             label3.TabIndex = 2;
-            label3.Text = "Version 1.2.5";
+            label3.Text = "نسخه: 1.2.7";
             // 
             // linklblGithub
             // 
             linklblGithub.AutoSize = true;
-            linklblGithub.LinkArea = new LinkArea(33, 18);
+            linklblGithub.LinkArea = new LinkArea(36, 18);
             linklblGithub.LinkColor = Color.FromArgb(13, 110, 253);
-            linklblGithub.Location = new Point(12, 202);
+            linklblGithub.Location = new Point(78, 197);
             linklblGithub.Name = "linklblGithub";
-            linklblGithub.Size = new Size(373, 25);
+            linklblGithub.RightToLeft = RightToLeft.Yes;
+            linklblGithub.Size = new Size(394, 25);
             linklblGithub.TabIndex = 3;
             linklblGithub.TabStop = true;
-            linklblGithub.Text = "Developed by Sepehr Hekmat Rad - Github repository";
+            linklblGithub.Text = "طراحی و توسعه توسط: سپهر حکمت راد | مخزن Github برنامه";
             linklblGithub.UseCompatibleTextRendering = true;
             linklblGithub.LinkClicked += linklblGithub_LinkClicked;
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(12, 9);
+            pictureBox1.Location = new Point(79, 12);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(59, 62);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -114,8 +116,9 @@
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "About";
+            RightToLeft = RightToLeft.No;
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "About";
+            Text = "درباره برنامه";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();

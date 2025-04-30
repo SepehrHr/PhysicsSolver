@@ -69,7 +69,7 @@
             groupBox1.Size = new Size(682, 297);
             groupBox1.TabIndex = 1;
             groupBox1.TabStop = false;
-            groupBox1.Text = "Calculate Density";
+            groupBox1.Text = "محاسبه توان گرمایی";
             // 
             // tableLayoutPanel1
             // 
@@ -142,27 +142,27 @@
             label2.AutoSize = true;
             label2.Location = new Point(3, 0);
             label2.Name = "label2";
-            label2.Size = new Size(69, 20);
+            label2.Size = new Size(116, 20);
             label2.TabIndex = 0;
-            label2.Text = "Q (Heat):";
+            label2.Text = "انرژی گرمایی (Q):";
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Location = new Point(3, 37);
             label1.Name = "label1";
-            label1.Size = new Size(42, 20);
+            label1.Size = new Size(59, 20);
             label1.TabIndex = 0;
-            label1.Text = "time:";
+            label1.Text = "زمان (t):";
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Location = new Point(3, 74);
             label3.Name = "label3";
-            label3.Size = new Size(52, 20);
+            label3.Size = new Size(109, 20);
             label3.TabIndex = 0;
-            label3.Text = "Power:";
+            label3.Text = "توان گرمایی (P):";
             // 
             // btnCalculate
             // 
@@ -173,7 +173,7 @@
             btnCalculate.Name = "btnCalculate";
             btnCalculate.Size = new Size(516, 32);
             btnCalculate.TabIndex = 7;
-            btnCalculate.Text = "Calculate";
+            btnCalculate.Text = "محاسبه";
             btnCalculate.UseVisualStyleBackColor = true;
             btnCalculate.Click += btnCalculate_Click;
             // 
@@ -260,16 +260,16 @@
             rd1Solid.Checked = true;
             rd1Solid.Location = new Point(3, 3);
             rd1Solid.Name = "rd1Solid";
-            rd1Solid.Size = new Size(118, 24);
+            rd1Solid.Size = new Size(120, 24);
             rd1Solid.TabIndex = 0;
             rd1Solid.TabStop = true;
-            rd1Solid.Text = "Watt (SI Unit)";
+            rd1Solid.Text = "Watt (SI واحد)";
             rd1Solid.UseVisualStyleBackColor = true;
             // 
             // rd2Solid
             // 
             rd2Solid.AutoSize = true;
-            rd2Solid.Location = new Point(127, 3);
+            rd2Solid.Location = new Point(129, 3);
             rd2Solid.Name = "rd2Solid";
             rd2Solid.Size = new Size(47, 24);
             rd2Solid.TabIndex = 1;
@@ -281,7 +281,7 @@
             btnCopy.BackgroundImage = (Image)resources.GetObject("btnCopy.BackgroundImage");
             btnCopy.BackgroundImageLayout = ImageLayout.Zoom;
             btnCopy.Dock = DockStyle.Right;
-            btnCopy.Location = new Point(180, 3);
+            btnCopy.Location = new Point(182, 3);
             btnCopy.Name = "btnCopy";
             btnCopy.Size = new Size(24, 24);
             btnCopy.TabIndex = 6;
@@ -311,7 +311,7 @@
             MinimizeBox = false;
             Name = "Power";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Power";
+            Text = "Physics Solver - توان";
             Load += Power_Load;
             groupBox1.ResumeLayout(false);
             tableLayoutPanel1.ResumeLayout(false);

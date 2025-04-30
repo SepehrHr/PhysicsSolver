@@ -57,9 +57,10 @@
             lblWelcome.Location = new Point(0, 0);
             lblWelcome.MaximumSize = new Size(465, 0);
             lblWelcome.Name = "lblWelcome";
+            lblWelcome.RightToLeft = RightToLeft.Yes;
             lblWelcome.Size = new Size(465, 45);
             lblWelcome.TabIndex = 0;
-            lblWelcome.Text = "Hi. Please choose type of physics problem that you're going to solve:";
+            lblWelcome.Text = "مسئله ای که میخواهید حل کنید را انتخاب کنید:";
             lblWelcome.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel1
@@ -89,10 +90,11 @@
             groupBox1.Dock = DockStyle.Fill;
             groupBox1.Location = new Point(3, 3);
             groupBox1.Name = "groupBox1";
+            groupBox1.RightToLeft = RightToLeft.Yes;
             groupBox1.Size = new Size(476, 74);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
-            groupBox1.Text = "Energy";
+            groupBox1.Text = "انرژی (فصل 3 فیزیک دهم)";
             // 
             // btnU
             // 
@@ -101,7 +103,7 @@
             btnU.Name = "btnU";
             btnU.Size = new Size(198, 48);
             btnU.TabIndex = 1;
-            btnU.Text = "Gravitational Energy (U)";
+            btnU.Text = "انرژی پتانسیل گرانشی";
             btnU.UseVisualStyleBackColor = true;
             btnU.Click += btnU_Click;
             // 
@@ -111,8 +113,8 @@
             button3.Location = new Point(3, 23);
             button3.Name = "button3";
             button3.Size = new Size(132, 48);
-            button3.TabIndex = 0;
-            button3.Text = "Work";
+            button3.TabIndex = 2;
+            button3.Text = "کار";
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
             // 
@@ -122,8 +124,8 @@
             btnKinetic.Location = new Point(333, 23);
             btnKinetic.Name = "btnKinetic";
             btnKinetic.Size = new Size(140, 48);
-            btnKinetic.TabIndex = 2;
-            btnKinetic.Text = "Kinetic Energy";
+            btnKinetic.TabIndex = 0;
+            btnKinetic.Text = "انرژی جنبشی";
             btnKinetic.UseVisualStyleBackColor = true;
             btnKinetic.Click += btnKinetic_Click;
             // 
@@ -134,10 +136,11 @@
             groupBox2.Dock = DockStyle.Fill;
             groupBox2.Location = new Point(3, 163);
             groupBox2.Name = "groupBox2";
+            groupBox2.RightToLeft = RightToLeft.Yes;
             groupBox2.Size = new Size(476, 74);
             groupBox2.TabIndex = 2;
             groupBox2.TabStop = false;
-            groupBox2.Text = "Other";
+            groupBox2.Text = "سایر";
             // 
             // btnPressure
             // 
@@ -145,8 +148,8 @@
             btnPressure.Location = new Point(239, 23);
             btnPressure.Name = "btnPressure";
             btnPressure.Size = new Size(234, 48);
-            btnPressure.TabIndex = 1;
-            btnPressure.Text = "Pressure";
+            btnPressure.TabIndex = 0;
+            btnPressure.Text = "فشار";
             btnPressure.UseVisualStyleBackColor = true;
             btnPressure.Click += btnPressure_Click;
             // 
@@ -156,8 +159,8 @@
             btnDensity.Location = new Point(3, 23);
             btnDensity.Name = "btnDensity";
             btnDensity.Size = new Size(234, 48);
-            btnDensity.TabIndex = 0;
-            btnDensity.Text = "Density";
+            btnDensity.TabIndex = 1;
+            btnDensity.Text = "چگالی";
             btnDensity.UseVisualStyleBackColor = true;
             btnDensity.Click += btnDensity_Click;
             // 
@@ -168,10 +171,11 @@
             groupBox3.Dock = DockStyle.Fill;
             groupBox3.Location = new Point(3, 83);
             groupBox3.Name = "groupBox3";
+            groupBox3.RightToLeft = RightToLeft.Yes;
             groupBox3.Size = new Size(476, 74);
             groupBox3.TabIndex = 1;
             groupBox3.TabStop = false;
-            groupBox3.Text = "Heat";
+            groupBox3.Text = "گرما (فصل 4 فیزیک دهم)";
             // 
             // btnPower
             // 
@@ -179,8 +183,8 @@
             btnPower.Location = new Point(239, 23);
             btnPower.Name = "btnPower";
             btnPower.Size = new Size(234, 48);
-            btnPower.TabIndex = 1;
-            btnPower.Text = "Power (Heat)";
+            btnPower.TabIndex = 0;
+            btnPower.Text = "توان گرمایی";
             btnPower.UseVisualStyleBackColor = true;
             btnPower.Click += btnPower_Click;
             // 
@@ -190,8 +194,8 @@
             button1.Location = new Point(3, 23);
             button1.Name = "button1";
             button1.Size = new Size(234, 48);
-            button1.TabIndex = 0;
-            button1.Text = "Heat Energy";
+            button1.TabIndex = 1;
+            button1.Text = "انرژی گرمایی";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
@@ -202,26 +206,27 @@
             flowLayoutPanel1.Dock = DockStyle.Fill;
             flowLayoutPanel1.Location = new Point(3, 243);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
+            flowLayoutPanel1.RightToLeft = RightToLeft.Yes;
             flowLayoutPanel1.Size = new Size(476, 37);
             flowLayoutPanel1.TabIndex = 3;
             // 
             // btnQuit
             // 
-            btnQuit.Location = new Point(3, 3);
+            btnQuit.Location = new Point(379, 3);
             btnQuit.Name = "btnQuit";
             btnQuit.Size = new Size(94, 29);
             btnQuit.TabIndex = 0;
-            btnQuit.Text = "Quit";
+            btnQuit.Text = "خروج";
             btnQuit.UseVisualStyleBackColor = true;
             btnQuit.Click += btnQuit_Click;
             // 
             // btnAbout
             // 
-            btnAbout.Location = new Point(103, 3);
+            btnAbout.Location = new Point(279, 3);
             btnAbout.Name = "btnAbout";
             btnAbout.Size = new Size(94, 29);
             btnAbout.TabIndex = 1;
-            btnAbout.Text = "About";
+            btnAbout.Text = "درباره برنامه";
             btnAbout.UseVisualStyleBackColor = true;
             btnAbout.Click += btnAbout_Click;
             // 

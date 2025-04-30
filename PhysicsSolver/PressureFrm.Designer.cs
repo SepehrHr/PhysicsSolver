@@ -118,7 +118,7 @@
             tabSolid.Padding = new Padding(3);
             tabSolid.Size = new Size(792, 264);
             tabSolid.TabIndex = 0;
-            tabSolid.Text = "Pressure in Solids";
+            tabSolid.Text = "فشار در جامدات";
             tabSolid.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel1
@@ -193,27 +193,27 @@
             label2.AutoSize = true;
             label2.Location = new Point(3, 0);
             label2.Name = "label2";
-            label2.Size = new Size(48, 20);
+            label2.Size = new Size(56, 20);
             label2.TabIndex = 0;
-            label2.Text = "Force:";
+            label2.Text = "نیرو (F):";
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Location = new Point(3, 34);
             label1.Name = "label1";
-            label1.Size = new Size(43, 20);
+            label1.Size = new Size(85, 20);
             label1.TabIndex = 0;
-            label1.Text = "Area:";
+            label1.Text = "مساحت (A):";
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Location = new Point(3, 68);
             label3.Name = "label3";
-            label3.Size = new Size(66, 20);
+            label3.Size = new Size(65, 20);
             label3.TabIndex = 0;
-            label3.Text = "Pressure:";
+            label3.Text = "فشار (P):";
             // 
             // CalculateSolids
             // 
@@ -224,7 +224,7 @@
             CalculateSolids.Name = "CalculateSolids";
             CalculateSolids.Size = new Size(626, 28);
             CalculateSolids.TabIndex = 6;
-            CalculateSolids.Text = "Calculate";
+            CalculateSolids.Text = "محاسبه";
             CalculateSolids.UseVisualStyleBackColor = true;
             CalculateSolids.Click += CalculateSolids_Click;
             // 
@@ -301,16 +301,16 @@
             rd1Solid.Checked = true;
             rd1Solid.Location = new Point(3, 3);
             rd1Solid.Name = "rd1Solid";
-            rd1Solid.Size = new Size(79, 24);
+            rd1Solid.Size = new Size(75, 24);
             rd1Solid.TabIndex = 0;
             rd1Solid.TabStop = true;
-            rd1Solid.Text = "SI Units";
+            rd1Solid.Text = "SI واحد";
             rd1Solid.UseVisualStyleBackColor = true;
             // 
             // rd2Solid
             // 
             rd2Solid.AutoSize = true;
-            rd2Solid.Location = new Point(88, 3);
+            rd2Solid.Location = new Point(84, 3);
             rd2Solid.Name = "rd2Solid";
             rd2Solid.Size = new Size(56, 24);
             rd2Solid.TabIndex = 1;
@@ -320,7 +320,7 @@
             // rd3Solid
             // 
             rd3Solid.AutoSize = true;
-            rd3Solid.Location = new Point(150, 3);
+            rd3Solid.Location = new Point(146, 3);
             rd3Solid.Name = "rd3Solid";
             rd3Solid.Size = new Size(70, 24);
             rd3Solid.TabIndex = 2;
@@ -329,7 +329,7 @@
             // 
             // splitter1
             // 
-            splitter1.Location = new Point(226, 3);
+            splitter1.Location = new Point(222, 3);
             splitter1.Name = "splitter1";
             splitter1.Size = new Size(4, 24);
             splitter1.TabIndex = 5;
@@ -340,7 +340,7 @@
             btnCopy.BackgroundImage = (Image)resources.GetObject("btnCopy.BackgroundImage");
             btnCopy.BackgroundImageLayout = ImageLayout.Zoom;
             btnCopy.Dock = DockStyle.Right;
-            btnCopy.Location = new Point(236, 3);
+            btnCopy.Location = new Point(232, 3);
             btnCopy.Name = "btnCopy";
             btnCopy.Size = new Size(24, 24);
             btnCopy.TabIndex = 4;
@@ -380,7 +380,7 @@
             tabFluid.Padding = new Padding(3);
             tabFluid.Size = new Size(792, 264);
             tabFluid.TabIndex = 1;
-            tabFluid.Text = "Pressure in Fliuds";
+            tabFluid.Text = "فشار در شاره ها";
             tabFluid.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel2
@@ -481,27 +481,27 @@
             label4.AutoSize = true;
             label4.Location = new Point(3, 0);
             label4.Name = "label4";
-            label4.Size = new Size(84, 20);
+            label4.Size = new Size(74, 20);
             label4.TabIndex = 0;
-            label4.Text = "ρ (Density):";
+            label4.Text = "چگالی (ρ):";
             // 
             // label5
             // 
             label5.AutoSize = true;
             label5.Location = new Point(3, 32);
             label5.Name = "label5";
-            label5.Size = new Size(81, 20);
+            label5.Size = new Size(115, 20);
             label5.TabIndex = 0;
-            label5.Text = "g (Gravity):";
+            label5.Text = "شتاب گرانش (g):";
             // 
             // label6
             // 
             label6.AutoSize = true;
             label6.Location = new Point(3, 64);
             label6.Name = "label6";
-            label6.Size = new Size(79, 20);
+            label6.Size = new Size(68, 20);
             label6.TabIndex = 0;
-            label6.Text = "h (Height):";
+            label6.Text = "ارتفاع (h):";
             // 
             // btnCalculateFliuds
             // 
@@ -512,7 +512,7 @@
             btnCalculateFliuds.Name = "btnCalculateFliuds";
             btnCalculateFliuds.Size = new Size(626, 30);
             btnCalculateFliuds.TabIndex = 8;
-            btnCalculateFliuds.Text = "Calculate";
+            btnCalculateFliuds.Text = "محاسبه";
             btnCalculateFliuds.UseVisualStyleBackColor = true;
             btnCalculateFliuds.Click += btnCalculateFliuds_Click;
             // 
@@ -602,16 +602,16 @@
             rd1Fliud.Checked = true;
             rd1Fliud.Location = new Point(3, 3);
             rd1Fliud.Name = "rd1Fliud";
-            rd1Fliud.Size = new Size(79, 24);
+            rd1Fliud.Size = new Size(75, 24);
             rd1Fliud.TabIndex = 0;
             rd1Fliud.TabStop = true;
-            rd1Fliud.Text = "SI Units";
+            rd1Fliud.Text = "SI واحد";
             rd1Fliud.UseVisualStyleBackColor = true;
             // 
             // rd2Fliud
             // 
             rd2Fliud.AutoSize = true;
-            rd2Fliud.Location = new Point(88, 3);
+            rd2Fliud.Location = new Point(84, 3);
             rd2Fliud.Name = "rd2Fliud";
             rd2Fliud.Size = new Size(56, 24);
             rd2Fliud.TabIndex = 0;
@@ -621,7 +621,7 @@
             // rd3Fliud
             // 
             rd3Fliud.AutoSize = true;
-            rd3Fliud.Location = new Point(150, 3);
+            rd3Fliud.Location = new Point(146, 3);
             rd3Fliud.Name = "rd3Fliud";
             rd3Fliud.Size = new Size(70, 24);
             rd3Fliud.TabIndex = 0;
@@ -630,7 +630,7 @@
             // 
             // splitter2
             // 
-            splitter2.Location = new Point(226, 3);
+            splitter2.Location = new Point(222, 3);
             splitter2.Name = "splitter2";
             splitter2.Size = new Size(4, 24);
             splitter2.TabIndex = 6;
@@ -641,7 +641,7 @@
             button2.BackgroundImage = (Image)resources.GetObject("button2.BackgroundImage");
             button2.BackgroundImageLayout = ImageLayout.Zoom;
             button2.Dock = DockStyle.Right;
-            button2.Location = new Point(236, 3);
+            button2.Location = new Point(232, 3);
             button2.Name = "button2";
             button2.Size = new Size(24, 24);
             button2.TabIndex = 5;
@@ -653,9 +653,9 @@
             label11.AutoSize = true;
             label11.Location = new Point(3, 96);
             label11.Name = "label11";
-            label11.Size = new Size(66, 20);
+            label11.Size = new Size(65, 20);
             label11.TabIndex = 0;
-            label11.Text = "Pressure:";
+            label11.Text = "فشار (P):";
             // 
             // lblPressureFliuds
             // 
@@ -688,7 +688,7 @@
             MinimizeBox = false;
             Name = "PressureFrm";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "PressureFrm";
+            Text = "Physics Solver - فشار";
             Load += PressureFrm_Load;
             tabControl1.ResumeLayout(false);
             tabSolid.ResumeLayout(false);

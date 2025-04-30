@@ -32,7 +32,7 @@ namespace PhysicsSolver
             decimal rho = cmbRhoUnit.SelectedIndex < 2 ? numRho.Value : numRho.Value * 1000;
             if (rho == 0)
             {
-                rd1Solid.Visible = true; rd1Solid.Text = "Kg/m³ (SI Unit)";
+                rd1Solid.Visible = true; rd1Solid.Text = "Kg/m³ (SI واحد)";
                 rd2Solid.Visible = true; rd2Solid.Text = "g/L";
                 rd3Solid.Visible = true; rd3Solid.Text = "g/cm³";
                 if (volume == 0)

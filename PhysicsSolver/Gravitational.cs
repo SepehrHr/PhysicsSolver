@@ -27,7 +27,7 @@ namespace PhysicsSolver
 
             if (u == 0)
             {
-                rd1.Visible = true; rd1.Text = "J (SI Unit)";
+                rd1.Visible = true; rd1.Text = "J (SI واحد)";
                 rd2.Visible = true; rd2.Text = "KJ";
 
                 var result = mass * g * height;

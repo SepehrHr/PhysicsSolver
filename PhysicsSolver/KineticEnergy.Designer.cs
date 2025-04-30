@@ -70,7 +70,7 @@
             groupBox1.Size = new Size(800, 297);
             groupBox1.TabIndex = 1;
             groupBox1.TabStop = false;
-            groupBox1.Text = "Calculate Kinetic Energy";
+            groupBox1.Text = "محاسبه انرژی جنبشی";
             // 
             // tableLayoutPanel1
             // 
@@ -143,9 +143,9 @@
             label2.AutoSize = true;
             label2.Location = new Point(3, 0);
             label2.Name = "label2";
-            label2.Size = new Size(45, 20);
+            label2.Size = new Size(62, 20);
             label2.TabIndex = 0;
-            label2.Text = "mass:";
+            label2.Text = "جرم (m):";
             // 
             // label1
             // 
@@ -154,16 +154,16 @@
             label1.Name = "label1";
             label1.Size = new Size(64, 20);
             label1.TabIndex = 0;
-            label1.Text = "Velocity:";
+            label1.Text = "تندی (V):";
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Location = new Point(3, 74);
             label3.Name = "label3";
-            label3.Size = new Size(106, 20);
+            label3.Size = new Size(110, 20);
             label3.TabIndex = 0;
-            label3.Text = "Kinetic Energy:";
+            label3.Text = "انرژی جنبشی (K):";
             // 
             // btnCalculate
             // 
@@ -174,7 +174,7 @@
             btnCalculate.Name = "btnCalculate";
             btnCalculate.Size = new Size(634, 32);
             btnCalculate.TabIndex = 7;
-            btnCalculate.Text = "Calculate";
+            btnCalculate.Text = "محاسبه";
             btnCalculate.UseVisualStyleBackColor = true;
             btnCalculate.Click += btnCalculate_Click;
             // 
@@ -322,7 +322,7 @@
             MinimizeBox = false;
             Name = "KineticEnergy";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Physics Solver - Kinetic Energy";
+            Text = "Physics Solver - انرژی جنبشی";
             Load += KineticEnergy_Load;
             groupBox1.ResumeLayout(false);
             tableLayoutPanel1.ResumeLayout(false);
