@@ -13,7 +13,7 @@ To compile the code on your own machine, use the steps bellow.
 4. Enter this command and replace `<OUTPUT-DIRECTORY>` with the directory of the folder in which you want to create the .exe file.
    
   ``` bash
-  dotnet publish PhysicsSolver -c Release -r win-x86 -f net8.0-windows --self-contained false -p:PublishSingleFile=true -o "<OUTPUT-DIRECTORY>"`
+  dotnet publish PhysicsSolver -c Release -r win-x86 -f net8.0-windows --self-contained false -p:PublishSingleFile=true -o "<OUTPUT-DIRECTORY>"
   and replace
   ```
   
