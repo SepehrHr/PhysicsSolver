@@ -7,14 +7,13 @@ To use the application, you can either download the .exe file of the latest vers
 
 ## **How to compile the code**
 To compile the code on your own machine, use the steps bellow.
-1. Install .NET SDK (.net8.0) in your machine
-2. Use `git clone https://github.com/SepehrHr/PhysicsSolver.git` in the desired location to clone the repository to your machine.
-3. Open a terminal in the directory of the project.
-4. Enter this command and replace `<OUTPUT-DIRECTORY>` with the directory of the folder in which you want to create the .exe file.
-   
-  ``` bash
-  dotnet publish PhysicsSolver -c Release -r win-x86 -f net8.0-windows --self-contained false -p:PublishSingleFile=true -o "<OUTPUT-DIRECTORY>"
-  and replace
-  ```
+1. Install .NET SDK (.net8.0) and Git in your machine
+2. Open a new folder in which you want to place the repo
+3. `git clone https://github.com/SepehrHr/PhysicsSolver.git`
+4. `cd PhysicsSolver`
+5.   ``` bash
+     dotnet publish PhysicsSolver -c Release -r win-x86 -f net8.0-windows --self-contained false -p:PublishSingleFile=true -o "<OUTPUT-DIRECTORY>"
+     ```
+     (Replcae <OUTPUT-DIRECTORY> with the place you want to save the exe file)
   
 5. A single exe file must be created in the directory.
