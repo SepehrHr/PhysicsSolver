@@ -14,6 +14,6 @@ To compile the code on your own machine, use the steps bellow.
 5.   ``` bash
      dotnet publish PhysicsSolver -c Release -r win-x86 -f net8.0-windows --self-contained false -p:PublishSingleFile=true -o "<OUTPUT-DIRECTORY>"
      ```
-     (Replcae <OUTPUT-DIRECTORY> with the place you want to save the exe file)
+     (Replcae `<OUTPUT-DIRECTORY>` with the place you want to save the exe file)
   
 5. A single exe file must be created in the directory.
